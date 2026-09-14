@@ -39,3 +39,5 @@ assert.equal(images,79);
 assert(!studies.find(study => study.slug === 'speiz').sections.some(section => /results|outcome/i.test(section.title)));
 assert(studies.find(study => study.slug === 'aml').sections.some(section => section.title === 'Results'));
 console.log(`Verified ${studies.length} case studies, ${images} image references, source text fidelity, optional outcomes, and next-project destinations.`);
+
+await import('./check-editorial-case-studies.mjs');
