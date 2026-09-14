@@ -1,0 +1,363 @@
+{
+  "slug": "speiz",
+  "projectId": "03",
+  "title": "Speiz",
+  "headline": "Commercial Real Estate Leasing Platform",
+  "role": "Product designer",
+  "scope": "UX/UI · Webapp · Real estate",
+  "heroImage": {
+    "src": "/work/speiz/01.webp",
+    "alt": "Speiz — project overview, image 1",
+    "width": 2560,
+    "height": 1440
+  },
+  "sections": [
+    {
+      "id": "background",
+      "title": "Background",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Back in the day, when to-be Speiz team was on the hunt for a warehouse, they felt like the industry is analog, outdated, and full of traditional barriers. What they expected to be a straightforward process turned into endless scrolling through confusing listings, unclear terms, and constant back-and-forth with multiple middlemen.",
+            "Frustrated by their own struggles, the team had a light bulb moment: What if leasing a warehouse could be as simple as booking a hotel room?",
+            "That's the spark that ignited Speiz. The team decided to design a platform to spare businesses the headache they went through."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "challenge",
+      "title": "Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Our competitor audit, tenant interviews, and landlord calls revealed recurring pain points that turn a simple space hunt into weeks of guess-work."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Fragmented data across different sources",
+            "Hidden vacancy",
+            "Missing specs",
+            "Out-of-date visuals",
+            "PDF time-sink",
+            "Broker-led e-mail chains",
+            "Trust gap"
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "goal",
+      "title": "Goal",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Our main goal was mapping the chaos: help tenants shortlist viable spaces in \\"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Single hub of warehouses in Norway",
+            "Maximum available spaces",
+            "Full spec data",
+            "Zero PDFs",
+            "Price range",
+            "Fresh photos",
+            "Availability updates"
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "Solution",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Our main goal was mapping the chaos: help tenants shortlist viable spaces in \\"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "One-stop search",
+            "National database sync",
+            "Detailed warehouse information",
+            "In-app fact sheets",
+            "Current photos",
+            "Price estimate",
+            "Verified tenant badge"
+          ],
+          "ordered": false
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/02.webp",
+            "alt": "Speiz — Solution, image 2",
+            "width": 2560,
+            "height": 1440
+          }
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "title": "Process",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/03.webp",
+            "alt": "Speiz — Process, image 3",
+            "width": 2560,
+            "height": 2284
+          }
+        }
+      ]
+    },
+    {
+      "id": "competitors-analysis",
+      "title": "Competitors analysis",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "For competitors analysis we benchmarked five main Norwegian CRE platforms. The research helped pinpoint their strengths and weak spots. The findings gave us understanding of further user experience improvements on the Speiz platform"
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/04.webp",
+            "alt": "Speiz — Competitors analysis, image 4",
+            "width": 2560,
+            "height": 1513
+          }
+        }
+      ]
+    },
+    {
+      "id": "information-architecture",
+      "title": "Information architecture",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Previous research has become the basement for user-friendly and intuitive navigation inside the app"
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/05.webp",
+            "alt": "Speiz — Information architecture, image 5",
+            "width": 2560,
+            "height": 1910
+          }
+        }
+      ]
+    },
+    {
+      "id": "wireframes",
+      "title": "Wireframes",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Previous research has become the basement for user-friendly and intuitive navigation inside the app"
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/06.webp",
+            "alt": "Speiz — Wireframes, image 6",
+            "width": 1400,
+            "height": 1281
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/07.webp",
+            "alt": "Speiz — Wireframes, image 7",
+            "width": 1280,
+            "height": 714
+          }
+        }
+      ]
+    },
+    {
+      "id": "color-palette",
+      "title": "Color palette",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Our palette starts with Speiz Blue as the anchor, then expands into a balanced scale of neutrals, success/error hues, and subtle accents.",
+            "Every tint and shade has been contrast-tested against WCAG 2.2, ensuring text, icons, and interactive states remain legible for all users and never sacrifices accessibility."
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/08.webp",
+            "alt": "Speiz — Color palette, image 8",
+            "width": 2560,
+            "height": 1047
+          }
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "We chose Inter—an open-source, screen-first typeface optimised for variable sizes and crisp rendering on both Retina dashboards and dusty warehouse tablets."
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/09.webp",
+            "alt": "Speiz — Typography, image 9",
+            "width": 2560,
+            "height": 1067
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/10.webp",
+            "alt": "Speiz — Typography, image 10",
+            "width": 2560,
+            "height": 1429
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/11.webp",
+            "alt": "Speiz — Typography, image 11",
+            "width": 2560,
+            "height": 995
+          }
+        }
+      ]
+    },
+    {
+      "id": "ui-kit",
+      "title": "UI-Kit",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "A UI kit built for speed, scale, and accessibility. Over 100 reusable components sit in one Figma library, letting designers and developers ship updates across every screen in seconds."
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/12.webp",
+            "alt": "Speiz — UI-Kit, image 12",
+            "width": 1280,
+            "height": 2250
+          }
+        }
+      ]
+    },
+    {
+      "id": "app-screens",
+      "title": "App screens",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/13.webp",
+            "alt": "Speiz — App screens, image 13",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/14.webp",
+            "alt": "Speiz — App screens, image 14",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/15.webp",
+            "alt": "Speiz — App screens, image 15",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/16.webp",
+            "alt": "Speiz — App screens, image 16",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/17.webp",
+            "alt": "Speiz — App screens, image 17",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/18.webp",
+            "alt": "Speiz — App screens, image 18",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/19.webp",
+            "alt": "Speiz — App screens, image 19",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/speiz/20.webp",
+            "alt": "Speiz — App screens, image 20",
+            "width": 2560,
+            "height": 3494
+          }
+        }
+      ]
+    }
+  ],
+  "nextProject": "ai-video-research",
+  "source": "https://app.notion.com/p/254397c0cf2380bb9985da89b3c99cc4"
+}

@@ -1,0 +1,152 @@
+{
+  "slug": "tukada",
+  "projectId": "08",
+  "title": "Tukada",
+  "headline": "Tukada Website and E-Shop Design",
+  "role": "UX/UI designer",
+  "scope": "UX/UI · E-shop · E-commerce · Mobile design · Responsive design · Landing page design",
+  "heroImage": {
+    "src": "/work/tukada/01.webp",
+    "alt": "Tukada — project overview, image 1",
+    "width": 2560,
+    "height": 1440
+  },
+  "sections": [
+    {
+      "id": "background",
+      "title": "Background",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "A company specializing in custom commercial vehicle engineering, building everything from mobile labs to high-end service vans, needed a stronger digital presence. Their expertise spans modular shelving, lighting, electronics integration, and certification, but their website didn’t yet reflect the scale of their work or support part sales online.",
+            "They wanted a way to showcase their craftsmanship while opening a new channel for selling custom-made components."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "challenge",
+      "title": "Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "While their engineering solutions were well recognized, the digital experience lagged behind. The business needed:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "A modern landing page that communicates expertise and showcases project examples",
+            "An e-shop to sell custom-made parts directly to clients",
+            "A conversion-focused structure to turn interest into sales and inquiries"
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "goals",
+      "title": "Goals",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The goal was to design a digital platform that combines **storytelling with functionality**: a landing page to present complex engineering solutions with clarity, and an e-commerce storefront tailored to selling specialized parts in a professional, user-friendly way."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "Solution",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "We built a dual-purpose platform:",
+            "**The landing page** highlights engineering projects, service capabilities, and a clear value proposition structured to guide visitors naturally toward exploring parts and solutions."
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/tukada/02.webp",
+            "alt": "Tukada — Solution, image 2",
+            "width": 3808,
+            "height": 2064
+          }
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "**E-commerce storefront** with a tailored catalog of custom components, product detail pages with specs and visuals, and an intuitive checkout experience designed for direct orders and quote requests."
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/tukada/03.webp",
+            "alt": "Tukada — Solution, image 3",
+            "width": 3088,
+            "height": 2552
+          }
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The system was integrated with marketing and tracking tools, supporting immediate transactions and long-term growth."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "title": "Process",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/tukada/04.webp",
+            "alt": "Tukada — Process, image 4",
+            "width": 3666,
+            "height": 2744
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/tukada/05.webp",
+            "alt": "Tukada — Process, image 5",
+            "width": 7923,
+            "height": 3482
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/tukada/06.webp",
+            "alt": "Tukada — Process, image 6",
+            "width": 4415,
+            "height": 4706
+          }
+        }
+      ]
+    },
+    {
+      "id": "outcome",
+      "title": "Outcome",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The new platform gave the company a **professional online identity** that reflects their technical expertise while opening a scalable sales channel for custom parts. Visitors can now explore project examples, gain confidence in the brand, and purchase specialized components directly — all within a unified, modern digital experience."
+          ]
+        }
+      ]
+    }
+  ],
+  "nextProject": "speiz",
+  "source": "https://app.notion.com/p/264397c0cf23809abe94fe9ab9003953"
+}

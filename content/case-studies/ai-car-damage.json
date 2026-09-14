@@ -1,0 +1,230 @@
+{
+  "slug": "ai-car-damage",
+  "projectId": "07",
+  "title": "AI Car Damage Assessment",
+  "headline": "AI-Powered Car Damage Assessment Platform",
+  "role": "UX/UI designer",
+  "scope": "UX/UI · Webapp · Responsive design · Mobile design",
+  "heroImage": {
+    "src": "/work/ai-car-damage/01.webp",
+    "alt": "AI Car Damage Assessment — project overview, image 1",
+    "width": 2560,
+    "height": 1440
+  },
+  "sections": [
+    {
+      "id": "background",
+      "title": "Background",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "EIA Scan is an AI-powered platform that provides fast and accurate car damage assessment using photos and videos.",
+            "The product **simplifies** insurance claims, repair cost estimation, and vehicle inspections, reducing the evaluation process** from days to minutes**."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "challenge",
+      "title": "Challenge",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Insurance companies spend too much time on manual assessments.",
+            "Existing tools are fragmented, often requiring in-person inspections.",
+            "Car owners lack a transparent way to understand the scale of damage.",
+            "The market needs an automated solution that generates industry-accepted PDF reports."
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "goal",
+      "title": "Goal",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Create a seamless digital flow that allows users to submit accident information in **under 5 minutes**.",
+            "Design a **professional and reliable system **that generates PDF reports trusted by both insurers and repair shops.",
+            "Ensure the product works equally well on **desktop and mobile** for different user groups."
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "wireframes",
+      "title": "Wireframes",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/02.webp",
+            "alt": "AI Car Damage Assessment — Wireframes, image 2",
+            "width": 2560,
+            "height": 3327
+          }
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/03.webp",
+            "alt": "AI Car Damage Assessment — Design, image 3",
+            "width": 2560,
+            "height": 1440
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/04.webp",
+            "alt": "AI Car Damage Assessment — Design, image 4",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/05.webp",
+            "alt": "AI Car Damage Assessment — Design, image 5",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/06.webp",
+            "alt": "AI Car Damage Assessment — Design, image 6",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/07.webp",
+            "alt": "AI Car Damage Assessment — Design, image 7",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/08.webp",
+            "alt": "AI Car Damage Assessment — Design, image 8",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/09.webp",
+            "alt": "AI Car Damage Assessment — Design, image 9",
+            "width": 2560,
+            "height": 3778
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/10.webp",
+            "alt": "AI Car Damage Assessment — Design, image 10",
+            "width": 2560,
+            "height": 1680
+          }
+        }
+      ]
+    },
+    {
+      "id": "color-palette",
+      "title": "Color palette",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/11.webp",
+            "alt": "AI Car Damage Assessment — Color palette, image 11",
+            "width": 2130,
+            "height": 1046
+          }
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/12.webp",
+            "alt": "AI Car Damage Assessment — Typography, image 12",
+            "width": 2560,
+            "height": 1067
+          }
+        }
+      ]
+    },
+    {
+      "id": "ui-kit",
+      "title": "UI-Kit",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-car-damage/13.webp",
+            "alt": "AI Car Damage Assessment — UI-Kit, image 13",
+            "width": 2560,
+            "height": 3214
+          }
+        }
+      ]
+    },
+    {
+      "id": "outcome",
+      "title": "Outcome",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Reduced assessment time from ~3 days to under 1 hour",
+            "Increased accuracy and trust with AI-powered evaluation",
+            "Error rate in form submissions significantly decreased thanks to contextual guidance"
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "learnings",
+      "title": "Learnings",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**UX writing matters:** contextual instructions dramatically reduced mistakes",
+            "**Less is more:** reducing report flow to 4 steps improved conversion rates",
+            "**Mobile-first behavior:** most users submitted photos directly from the accident scene, making responsive design critical"
+          ],
+          "ordered": false
+        }
+      ]
+    }
+  ],
+  "nextProject": "tukada",
+  "source": "https://app.notion.com/p/25b397c0cf23805187f7c63bed2044da"
+}

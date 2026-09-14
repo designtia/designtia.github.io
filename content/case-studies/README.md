@@ -1,0 +1,23 @@
+# Case-study content
+
+Each JSON file is a source-backed project. The homepage and `/work/[slug]` routes use the same registry in `index.ts`. Register an entry only when its real content is ready; unregistered projects do not get pages or homepage links.
+
+The current six entries are faithfully migrated from the supplied Notion portfolio. Source wording, section order, image order, and existing qualitative or quantitative outcome claims are preserved. `sources/` contains credential-free snapshots for comparison. No date is inferred from Notion editing timestamps. Existing source inconsistencies are retained for the owner to review rather than silently rewritten.
+
+## Editing
+
+- `title`, `headline`, `role`, `scope`, optional `year`, and optional `metadata` define the hero.
+- `heroImage`: local `src`, descriptive `alt`, original `width` and `height`, optional `caption`.
+- `sections`: an ordered array with unique `id`, source `title`, and `blocks`. Omit sections with no source content.
+- Blocks support `text` (paragraphs), `list` (items, optional ordered), `heading`, `image`, `image-pair` (two images), `image-text` (image, paragraphs, optional imageSide), and `gallery` (images, optional columns: 1 or 2).
+- An optional top-level `gallery` renders final full-width screens without inventing a heading.
+- `nextProject` is a registered slug; missing destinations are omitted by the renderer.
+- `source` records the original Notion page URL.
+
+Text supports **bold** and Markdown HTTPS links. Text is escaped by React; raw HTML is never injected. Source `<br>` markers are represented as line breaks.
+
+Images live in `public/work/<slug>/`. They retain original dimensions and are losslessly encoded as WebP. Screens are uncropped, lazy-loaded below the hero, and have intrinsic dimensions to reserve space. Replace files and update dimensions/alt text together.
+
+Add Whirlwind or Flox later by creating a JSON entry with the matching homepage `projectId`, importing it in `index.ts`, and updating the next-project sequence. No new page component or routing code is required.
+
+Run `node scripts/check-case-studies.mjs` to verify content fidelity, image paths, optional outcomes, and navigation. Run `pnpm build` to validate and export all registered routes.

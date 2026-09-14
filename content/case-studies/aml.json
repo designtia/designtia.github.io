@@ -1,0 +1,143 @@
+{
+  "slug": "aml",
+  "projectId": "05",
+  "title": "AML System",
+  "headline": "Anti-Money Laundering System Design",
+  "role": "UX/UI designer",
+  "scope": "Webapp · UX/UI · SaaS",
+  "heroImage": {
+    "src": "/work/aml/01.webp",
+    "alt": "AML System — project overview, image 1",
+    "width": 2560,
+    "height": 1440
+  },
+  "sections": [
+    {
+      "id": "background",
+      "title": "Background",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Financial institutions face strict regulations regarding anti-money laundering (AML). Analysts need tools to help them track thousands of daily transactions, identify unusual patterns, and act quickly to prevent fraud or illegal activity.",
+            "We designed an **AML system interface** that turns complex transaction data into clear, actionable insights for compliance teams."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "challenge",
+      "title": "Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The existing workflows were overloaded with spreadsheets and disjointed tools, making it difficult for analysts to spot suspicious activity efficiently. The system needed to:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Aggregate large volumes of transaction data in real time",
+            "Help analysts quickly filter, search, and review cases",
+            "Highlight suspicious patterns and anomalies for investigation",
+            "Provide dashboards for managers to track alerts, team workload, and resolution status"
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "goal",
+      "title": "Goal",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Our goal was to create a **specialized tool for AML analysts** that reduces complexity, improves detection accuracy, and streamlines the investigation process. The system had to support both day-to-day case review and higher-level monitoring for compliance officers."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "Solution",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "We designed a **modular dashboard system** tailored to AML workflows:",
+            "**Transaction monitoring**",
+            "Analysts can search, filter, and review transactions with real-time status updates.",
+            "**Case management**",
+            "Suspicious items are grouped into cases with clear timelines, alerts, and investigation notes.",
+            "**Data visualization**",
+            "Charts and distribution graphs highlight anomalies, helping analysts spot patterns at a glance.",
+            "**Admin dashboards:**",
+            "Managers can see team performance, case resolution status, and workload distribution.",
+            "The interface balances **clarity and density,** showing critical data without overwhelming the user and ensuring analysts can act quickly when risks appear."
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/aml/02.webp",
+            "alt": "AML System — Solution, image 2",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/aml/03.webp",
+            "alt": "AML System — Solution, image 3",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/aml/04.webp",
+            "alt": "AML System — Solution, image 4",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/aml/05.webp",
+            "alt": "AML System — Solution, image 5",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/aml/06.webp",
+            "alt": "AML System — Solution, image 6",
+            "width": 2560,
+            "height": 1680
+          }
+        }
+      ]
+    },
+    {
+      "id": "results",
+      "title": "Results",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The AML system improved analysts’ ability to **detect suspicious transactions faster and more confidently**. By combining structured workflows with intuitive dashboards, the tool reduced manual work, helped teams prioritize high-risk cases, and supported compliance with regulatory standards."
+          ]
+        }
+      ]
+    }
+  ],
+  "nextProject": "pasaka",
+  "source": "https://app.notion.com/p/25d397c0cf23807f81e5e6dafb290913"
+}

@@ -1,0 +1,299 @@
+{
+  "slug": "ai-video-research",
+  "projectId": "04",
+  "title": "AI Video Research",
+  "headline": "AI-Powered Video Research Tool",
+  "role": "UX/UI designer",
+  "scope": "UX/UI · Webapp",
+  "heroImage": {
+    "src": "/work/ai-video-research/01.webp",
+    "alt": "AI Video Research — project overview, image 1",
+    "width": 2560,
+    "height": 1440
+  },
+  "sections": [
+    {
+      "id": "background",
+      "title": "Background",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Traditional surveys are often long, impersonal, and ineffective. Respondents experience fatigue, while companies struggle with low completion rates and shallow insights.",
+            "Insightvid set out to **redefine the feedback loop **by introducing **video-first surveys**: human, conversational, and designed to capture richer insights."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "challenge",
+      "title": "Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "We faced two core challenges:",
+            "**For respondents**:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Surveys felt transactional, boring, and time-consuming.",
+            "Respondents rarely felt their feedback was valued.",
+            "Video added friction: people could feel exposed or hesitant."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "**For companies**:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Existing survey tools delivered quantitative data but lacked emotional depth.",
+            "They needed **actionable insights** from authentic human responses.",
+            "The survey experience had to reflect positively on their brand."
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "goal",
+      "title": "Goal",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "To design a seamless, video-based survey experience that works for both sides."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Create a survey flow that feels human, short, and rewarding for respondents.",
+            "Give companies high-quality, emotionally rich insights.",
+            "Balance simplicity with flexibility (scalable across different brands and industries).",
+            "Ensure transparency, control, and trust at every step."
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "company-experience",
+      "title": "Company experience",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "For companies, the design had to be more than a “survey builder” — it had to be an **insight engine**.",
+            "**Key features included:**"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Customizable surveys** with brand elements",
+            "**Video responses dashboard** with easy review, tagging, and exporting",
+            "**AI-assisted summaries** with not just raw video, but structured summaries and sentiment markers",
+            "**Scalability** to make the solution adaptable to industries from retail to tech"
+          ],
+          "ordered": false
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/02.webp",
+            "alt": "AI Video Research — Company experience, image 2",
+            "width": 2560,
+            "height": 1750
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/03.webp",
+            "alt": "AI Video Research — Company experience, image 3",
+            "width": 2560,
+            "height": 3204
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/04.webp",
+            "alt": "AI Video Research — Company experience, image 4",
+            "width": 2560,
+            "height": 3204
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/05.webp",
+            "alt": "AI Video Research — Company experience, image 5",
+            "width": 2560,
+            "height": 3204
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/06.webp",
+            "alt": "AI Video Research — Company experience, image 6",
+            "width": 2560,
+            "height": 1750
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/07.webp",
+            "alt": "AI Video Research — Company experience, image 7",
+            "width": 2560,
+            "height": 4660
+          }
+        }
+      ]
+    },
+    {
+      "id": "respondents-experience",
+      "title": "Respondents experience",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "**Design goals**"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Minimal UI**"
+          ],
+          "ordered": false
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Focus on the person, not the interface"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Empowerment**"
+          ],
+          "ordered": false
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Give users control (review/retake)"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Transparency **"
+          ],
+          "ordered": false
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Always show progress"
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/08.webp",
+            "alt": "AI Video Research — Respondents experience, image 8",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/09.webp",
+            "alt": "AI Video Research — Respondents experience, image 9",
+            "width": 2560,
+            "height": 1680
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/10.webp",
+            "alt": "AI Video Research — Respondents experience, image 10",
+            "width": 2560,
+            "height": 3134
+          }
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/11.webp",
+            "alt": "AI Video Research — Respondents experience, image 11",
+            "width": 2560,
+            "height": 1680
+          }
+        }
+      ]
+    },
+    {
+      "id": "color-palette",
+      "title": "Color palette",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/12.webp",
+            "alt": "AI Video Research — Color palette, image 12",
+            "width": 2984,
+            "height": 6988
+          }
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/13.webp",
+            "alt": "AI Video Research — Typography, image 13",
+            "width": 2626,
+            "height": 4598
+          }
+        }
+      ]
+    },
+    {
+      "id": "ui-kit",
+      "title": "UI-Kit",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "src": "/work/ai-video-research/14.webp",
+            "alt": "AI Video Research — UI-Kit, image 14",
+            "width": 2420,
+            "height": 1908
+          }
+        }
+      ]
+    }
+  ],
+  "nextProject": "aml",
+  "source": "https://app.notion.com/p/255397c0cf238069bae1eb2f9936d64b"
+}
