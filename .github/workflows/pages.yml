@@ -22,8 +22,6 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: node scripts/check-case-studies.mjs
       - run: pnpm build
-        env:
-          NEXT_PUBLIC_BASE_PATH: /designtia
       - uses: actions/upload-pages-artifact@v4
         with:
           path: out
