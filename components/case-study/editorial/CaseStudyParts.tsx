@@ -9,9 +9,9 @@ export function CaseStudyMetadata({ items }: { items: EditorialStudy['metadata']
   return <dl className="editorial-metadata">{items.map(item => <div key={item.label}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}</dl>;
 }
 export function CaseStudyHero({ study }: { study: EditorialStudy }) {
-  return <section className="editorial-hero shell">
+  return <section className="editorial-hero shell" data-project={study.slug}>
     <p className="eyebrow">{study.eyebrow}</p><h1>{study.headline}</h1>
-    <CaseStudyMetadata items={study.metadata} /><MediaPlaceholder media={study.media[study.heroMedia]} />
+    <CaseStudyMetadata items={study.metadata} /><MediaPlaceholder media={study.media[study.heroMedia]} showCaption={study.slug !== 'speiz'} />
   </section>;
 }
 export function AnnotatedMedia({ media, annotations }: { media: EditorialMedia; annotations: { title: string; text: string }[] }) {

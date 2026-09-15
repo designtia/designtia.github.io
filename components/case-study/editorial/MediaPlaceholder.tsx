@@ -70,7 +70,7 @@ function Closeup({ focus }: { focus?: string }) {
 function HeroComposition() {
   return <div className="sp-hero-composition"><div className="sp-hero-search"><Search /></div><div className="sp-hero-guidance"><span className="sp-overline">Speiz Picks</span><h4>Human expertise.</h4><div className="sp-hero-mini-steps"><span>Personal call</span><span>Market analysis</span><span>Review</span></div></div><div className="sp-hero-ai"><span className="sp-overline">✳ AI Matches</span><h4>Your brief.<br />Explained options.</h4><div className="sp-hero-input">Describe what you need <span>↑</span></div><Lines count={2} /></div></div>;
 }
-export function MediaPlaceholder({ media }: { media: EditorialMedia }) {
+export function MediaPlaceholder({ media, showCaption = true }: { media: EditorialMedia; showCaption?: boolean }) {
   const content = () => {
     switch (media.variant) {
       case 'hero': return <HeroComposition />;
@@ -90,6 +90,6 @@ export function MediaPlaceholder({ media }: { media: EditorialMedia }) {
   return <figure className={`editorial-media media-variant-${media.variant}`} data-media-reveal>
     {media.image ? <img className="editorial-real-image" src={sitePath(media.image.src)} alt={media.image.alt} width={media.image.width} height={media.image.height} loading="lazy" /> :
       <div className="editorial-placeholder" role="img" aria-label={`${media.title}. Illustrative placeholder interface, not an original Speiz design.`}><div className="sp-art" aria-hidden="true">{content()}</div></div>}
-    <figcaption><span>{media.title}</span>{!media.image && <small>Illustrative UI · not an original screen</small>}{media.caption && <p>{media.caption}</p>}</figcaption>
+    {showCaption && <figcaption><span>{media.title}</span>{!media.image && <small>Illustrative UI · not an original screen</small>}{media.caption && <p>{media.caption}</p>}</figcaption>}
   </figure>;
 }

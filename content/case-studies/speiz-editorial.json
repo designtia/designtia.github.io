@@ -9,14 +9,13 @@
     "I worked across the core tenant experience, combining product design with product-management responsibilities — from research and product requirements to UX/UI, delivery, and iteration."
   ],
   "metadata": [
-    { "label": "ROLE", "value": "Product Designer with Product Management responsibilities" },
-    { "label": "PRODUCT", "value": "B2B marketplace · Commercial Real Estate" },
-    { "label": "MARKET", "value": "Norway" },
-    { "label": "SCOPE", "value": "Product strategy · Research · UX/UI · Requirements · Delivery · Iteration" }
+    { "label": "ROLE", "value": "Product Designer" },
+    { "label": "PRODUCT", "value": "B2B marketplace" },
+    { "label": "SCOPE", "value": "Strategy · UX/UI · Delivery" }
   ],
   "heroMedia": "hero",
   "media": {
-    "hero": { "title": "Three ways to discover a space", "variant": "hero", "image": { "src": "/work/speiz/overview-hero.png", "alt": "Speiz warehouse search interface with property listings, search filters, and the Ask Speiz AI banner.", "width": 3198, "height": 2272 } },
+    "hero": { "title": "Three ways to discover a space", "variant": "hero", "image": { "src": "/work/speiz/overview-hero.png", "alt": "Speiz warehouse search interface with property listings, search filters, and the Ask Speiz AI banner.", "width": 2880, "height": 1796 } },
     "research": { "title": "Competitor comparison and research findings", "variant": "research" },
     "ia": { "title": "Information architecture", "variant": "ia" },
     "wireframe": { "title": "Early flow / wireframe", "variant": "wireframe" },

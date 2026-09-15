@@ -221,3 +221,74 @@
 @media(max-width:700px) {
   .editorial-case { margin-top: 56px; }
 }
+
+/* Speiz hero refinement; the reading grid stays unchanged. */
+.editorial-hero[data-project="speiz"] {
+  width: calc(100% - 2 * var(--gutter));
+  padding-inline: 0;
+}
+.editorial-hero[data-project="speiz"] > .eyebrow {
+  max-width: 950px;
+  margin-inline: auto;
+  text-align: center;
+}
+.editorial-hero[data-project="speiz"] h1 {
+  max-width: 950px;
+  margin: 24px auto 48px;
+  font-size: clamp(30px, 3.1vw, 46px);
+  line-height: 1.15;
+  letter-spacing: -.04em;
+  text-align: center;
+  text-wrap: balance;
+}
+.editorial-hero[data-project="speiz"] .editorial-metadata {
+  width: 100%;
+  max-width: 840px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0 auto 56px;
+  background: #fff;
+  border: 1px solid #e4e6e8;
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: left;
+}
+.editorial-hero[data-project="speiz"] > .editorial-media {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  grid-column: auto;
+  transform: none;
+  translate: none;
+}
+.editorial-hero[data-project="speiz"] > .editorial-media > img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin-inline: auto;
+  position: static;
+  transform: none;
+  translate: none;
+  filter: drop-shadow(0 12px 22px rgb(25 35 50 / 10%));
+}
+.editorial-hero[data-project="speiz"] .editorial-metadata > div {
+  min-width: 0;
+  padding: 18px 20px;
+}
+.editorial-hero[data-project="speiz"] .editorial-metadata > div + div {
+  border-left: 1px solid #e4e6e8;
+}
+.editorial-hero[data-project="speiz"] .editorial-metadata dt { margin-bottom: 8px; }
+@media(max-width:700px) {
+  .editorial-hero[data-project="speiz"] .editorial-metadata {
+    grid-template-columns: 1fr;
+    gap: 0;
+    text-align: left;
+  }
+  .editorial-hero[data-project="speiz"] .editorial-metadata > div + div {
+    border-left: 0;
+    border-top: 1px solid #e4e6e8;
+  }
+}
