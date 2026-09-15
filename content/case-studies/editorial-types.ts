@@ -30,6 +30,7 @@ export type EditorialStudy = {
   eyebrow: string;
   headline: string;
   intro: string[];
+  overview?: { headline: string; labels: string[] };
   metadata: { label: string; value: string }[];
   heroMedia: string;
   media: Record<string, EditorialMedia>;

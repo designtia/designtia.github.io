@@ -3,10 +3,13 @@
   "title": "Speiz — Commercial Real Estate Platform",
   "eyebrow": "SPEIZ — COMMERCIAL REAL ESTATE PLATFORM",
   "headline": "Making warehouse search faster and more transparent in a fragmented B2B market",
+  "overview": {
+    "headline": "Bringing a fragmented warehouse market into one experience",
+    "labels": ["PRODUCT", "CHALLENGE"]
+  },
   "intro": [
     "Speiz is a commercial real estate platform that helps businesses discover, evaluate, and connect with warehouse spaces across Norway.",
-    "The product brings fragmented market information into one experience and helps tenants move from an initial space requirement to a shortlist of relevant options.",
-    "I worked across the core tenant experience, combining product design with product-management responsibilities — from research and product requirements to UX/UI, delivery, and iteration."
+    "Warehouse information was fragmented across listings, PDFs, brokers, and direct landlord communication. Speiz brought that information into one experience and helped tenants move from an initial requirement to a shortlist of relevant options."
   ],
   "metadata": [
     { "label": "ROLE", "value": "Product Designer" },

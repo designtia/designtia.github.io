@@ -42,8 +42,18 @@ export function CaseStudyLayout({ study }: { study: EditorialStudy }) {
     <div className="editorial-case shell"><CaseStudyTOC sections={study.sections} />
       <div className="editorial-main">
         <section id="overview" data-toc-section tabIndex={-1} className="editorial-overview">
-          <header className="editorial-section-heading"><h2>Overview</h2></header>
-          <div className="editorial-intro">{study.intro.map((text,i) => <p key={i}>{text}</p>)}</div>
+          {study.overview ? <>
+            <SectionHeading label="OVERVIEW" headline={study.overview.headline} />
+            <div className="editorial-overview-summary">
+              {study.intro.map((text, i) => <div key={study.overview!.labels[i]}>
+                <h3 className="eyebrow">{study.overview!.labels[i]}</h3>
+                <div className="editorial-prose"><p>{text}</p></div>
+              </div>)}
+            </div>
+          </> : <>
+            <header className="editorial-section-heading"><h2>Overview</h2></header>
+            <div className="editorial-intro">{study.intro.map((text,i) => <p key={i}>{text}</p>)}</div>
+          </>}
         </section>
         {study.sections.map(section => <Section key={section.id} section={section} study={study} />)}
         {study.gallery && <ProjectGallery title={study.gallery.title} text={study.gallery.text} media={study.gallery.media.map(id => study.media[id])} />}
