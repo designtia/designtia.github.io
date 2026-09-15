@@ -37,14 +37,19 @@ function Section({ section, study, child = false }: { section: EditorialSection;
 }
 export function CaseStudyLayout({ study }: { study: EditorialStudy }) {
   return <><a className="skip-link" href="#overview">Skip to case study</a><div id="top" /><Header home={false} />
+    <main>
+      <CaseStudyHero study={study} />
     <div className="editorial-case shell"><CaseStudyTOC sections={study.sections} />
-      <main className="editorial-main"><a className="text-link editorial-back" href={sitePath('/#work')}><span aria-hidden="true">←</span> Back to work</a>
-        <CaseStudyHero study={study} />
+      <div className="editorial-main">
+        <section id="overview" data-toc-section tabIndex={-1} className="editorial-overview">
+          <header className="editorial-section-heading"><h2>Overview</h2></header>
+          <div className="editorial-intro">{study.intro.map((text,i) => <p key={i}>{text}</p>)}</div>
+        </section>
         {study.sections.map(section => <Section key={section.id} section={section} study={study} />)}
         {study.gallery && <ProjectGallery title={study.gallery.title} text={study.gallery.text} media={study.gallery.media.map(id => study.media[id])} />}
         <nav className="editorial-next" aria-label="Project navigation"><a className="text-link" href={sitePath('/#work')}>Back to work <span aria-hidden="true">↗</span></a>
           {study.nextProject && <a href={sitePath(`/work/${study.nextProject.slug}/`)}><span className="eyebrow">Next project</span><strong>{study.nextProject.title} <span aria-hidden="true">→</span></strong></a>}
         </nav>
-      </main>
-    </div><Footer /><MediaReveal /></>;
+      </div>
+    </div></main><Footer /><MediaReveal /></>;
 }

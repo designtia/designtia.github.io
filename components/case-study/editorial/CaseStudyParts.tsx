@@ -9,9 +9,8 @@ export function CaseStudyMetadata({ items }: { items: EditorialStudy['metadata']
   return <dl className="editorial-metadata">{items.map(item => <div key={item.label}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}</dl>;
 }
 export function CaseStudyHero({ study }: { study: EditorialStudy }) {
-  return <section id="overview" data-toc-section tabIndex={-1} className="editorial-hero">
+  return <section className="editorial-hero shell">
     <p className="eyebrow">{study.eyebrow}</p><h1>{study.headline}</h1>
-    <div className="editorial-intro">{study.intro.map((text,i) => <p key={i}>{text}</p>)}</div>
     <CaseStudyMetadata items={study.metadata} /><MediaPlaceholder media={study.media[study.heroMedia]} />
   </section>;
 }

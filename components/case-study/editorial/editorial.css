@@ -204,3 +204,20 @@
 }
 @media(max-width:370px) { .editorial-mobile-toc { top: 85px; }.editorial-hero h1 { font-size: 36px; }.editorial-metadata { grid-template-columns: 1fr; } }
 @media(prefers-reduced-motion:reduce) { .editorial-media.media-arrived { animation: none; }.editorial-rail { scroll-behavior: auto; } }
+
+/* The intro spans the page; navigation begins with the reading section. */
+.editorial-hero.shell,
+.editorial-case.shell {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.editorial-hero { padding-top: 44px; }
+.editorial-case { margin-top: 84px; }
+.editorial-overview > .editorial-section-heading h2 { margin-top: 0; }
+.editorial-toc .toc-home,
+.editorial-mobile-toc .toc-home { font-size: 12px; font-weight: 400; color: #858b93; }
+.editorial-toc .toc-home { margin-bottom: 18px; padding-top: 0; }
+.editorial-mobile-toc .toc-home { white-space: nowrap; }
+@media(max-width:700px) {
+  .editorial-case { margin-top: 56px; }
+}

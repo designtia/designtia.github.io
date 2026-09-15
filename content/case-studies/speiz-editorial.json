@@ -16,7 +16,7 @@
   ],
   "heroMedia": "hero",
   "media": {
-    "hero": { "title": "Three ways to discover a space", "variant": "hero" },
+    "hero": { "title": "Three ways to discover a space", "variant": "hero", "image": { "src": "/work/speiz/overview-hero.png", "alt": "Speiz warehouse search interface with property listings, search filters, and the Ask Speiz AI banner.", "width": 3198, "height": 2272 } },
     "research": { "title": "Competitor comparison and research findings", "variant": "research" },
     "ia": { "title": "Information architecture", "variant": "ia" },
     "wireframe": { "title": "Early flow / wireframe", "variant": "wireframe" },

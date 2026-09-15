@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import { sitePath } from '@/lib/site-path';
 import type { EditorialSection } from '@/content/case-studies/editorial-types';
 
 type TOCItem = Pick<EditorialSection, 'id' | 'nav' | 'children'>;
@@ -46,7 +47,7 @@ export function CaseStudyTOC({ sections }: { sections: EditorialSection[] }) {
   return <>
     <aside className="editorial-toc">
       <nav aria-label="Case study contents">
-        <p className="toc-label">On this page</p>
+        <a className="toc-home" href={sitePath('/')}>← Back to Home</a>
         <ol>{items.map(item => {
           const within = active === item.id || !!item.children?.some(child => child.id === active);
           return <li key={item.id}>
@@ -61,8 +62,8 @@ export function CaseStudyTOC({ sections }: { sections: EditorialSection[] }) {
       </nav>
     </aside>
     <div className="editorial-mobile-toc">
-      <label htmlFor="case-study-section">On this page</label>
-      <select id="case-study-section" value={active} onChange={event => navigate(event.target.value)}>
+      <a className="toc-home" href={sitePath('/')}>← Back to Home</a>
+      <select aria-label="Case study section" id="case-study-section" value={active} onChange={event => navigate(event.target.value)}>
         {items.map(item => item.children ? <optgroup key={item.id} label={item.nav}>
           <option value={item.id}>{item.nav}</option>
           {item.children.map(child => <option key={child.id} value={child.id}>{child.nav}</option>)}
