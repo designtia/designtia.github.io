@@ -410,3 +410,19 @@
 @media(max-width:400px) {
   .speiz-reference-section .columns-responsibility { grid-template-columns: 1fr; }
 }
+
+/* Match the body grid to the hero's usable 1200px canvas. */
+.editorial-case.shell[data-project="speiz"] {
+  width: calc(100% - 2 * var(--gutter));
+  padding-inline: 0;
+}
+.editorial-case[data-project="speiz"] > .editorial-main {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin-inline: 0;
+  justify-self: stretch;
+}
+.editorial-case[data-project="speiz"] .editorial-section-heading {
+  max-width: none;
+}

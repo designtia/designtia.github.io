@@ -41,7 +41,7 @@ export function CaseStudyLayout({ study }: { study: EditorialStudy }) {
   return <><a className="skip-link" href="#overview">Skip to case study</a><div id="top" /><Header home={false} />
     <main>
       <CaseStudyHero study={study} />
-    <div className="editorial-case shell"><CaseStudyTOC sections={study.sections} />
+    <div className="editorial-case shell" data-project={study.slug}><CaseStudyTOC sections={study.sections} />
       <div className="editorial-main">
         <section id="overview" data-toc-section tabIndex={-1} className={`editorial-overview ${study.slug === 'speiz' ? 'speiz-reference-section' : ''}`}>
           {study.overview ? <>
