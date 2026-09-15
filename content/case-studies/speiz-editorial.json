@@ -4,95 +4,274 @@
   "eyebrow": "SPEIZ — COMMERCIAL REAL ESTATE PLATFORM",
   "headline": "Making warehouse search faster and more transparent in a fragmented B2B market",
   "overview": {
-    "headline": "Bringing a fragmented warehouse market into one experience",
-    "labels": ["PRODUCT", "CHALLENGE"]
+    "headline": "Helping tenants move from space requirements to relevant options",
+    "labels": [
+      "PRODUCT",
+      "CHALLENGE"
+    ]
   },
   "intro": [
-    "Speiz is a commercial real estate platform that helps businesses discover, evaluate, and connect with warehouse spaces across Norway.",
-    "Warehouse information was fragmented across listings, PDFs, brokers, and direct landlord communication. Speiz brought that information into one experience and helped tenants move from an initial requirement to a shortlist of relevant options."
+    "Speiz is a B2B commercial real estate platform that helps businesses discover, evaluate, and connect with warehouse spaces across Norway.",
+    "Warehouse search relied on listings, PDFs, brokers, and direct landlord communication, making it slow to identify and qualify relevant spaces."
   ],
   "metadata": [
-    { "label": "ROLE", "value": "Product Designer" },
-    { "label": "PRODUCT", "value": "B2B marketplace" },
-    { "label": "SCOPE", "value": "Strategy · UX/UI · Delivery" }
+    {
+      "label": "ROLE",
+      "value": "Product Designer"
+    },
+    {
+      "label": "PRODUCT",
+      "value": "B2B marketplace"
+    },
+    {
+      "label": "SCOPE",
+      "value": "Strategy · UX/UI · Delivery"
+    }
   ],
   "heroMedia": "hero",
   "media": {
-    "hero": { "title": "Three ways to discover a space", "variant": "hero", "image": { "src": "/work/speiz/overview-hero.png", "alt": "Speiz warehouse search interface with property listings, search filters, and the Ask Speiz AI banner.", "width": 2880, "height": 1796 } },
-    "research": { "title": "Competitor comparison and research findings", "variant": "research" },
-    "ia": { "title": "Information architecture", "variant": "ia" },
-    "wireframe": { "title": "Early flow / wireframe", "variant": "wireframe" },
-    "search": { "title": "Classic Search", "variant": "search" },
-    "picks-overview": { "title": "Speiz Picks overview", "variant": "picks-overview", "caption": "Speiz Picks brings human market expertise into the product through a shortlist curated for a specific tenant request." },
-    "picks-results": { "title": "Speiz Picks results", "variant": "picks-results", "caption": "Curated spaces remain tied to the original request and can be reviewed, accepted, or rejected directly inside the experience." },
-    "ai-starter": { "title": "AI Matches starter", "variant": "ai-starter" },
-    "ai-results": { "title": "AI Matches results", "variant": "ai-results" },
-    "match-score": { "title": "Match score", "variant": "closeup", "focus": "score" },
-    "why-it-fits": { "title": "Why it fits", "variant": "closeup", "focus": "reason" },
-    "sources": { "title": "Sources", "variant": "closeup", "focus": "sources" },
-    "refine": { "title": "Refine criteria", "variant": "closeup", "focus": "criteria" },
-    "details": { "title": "Space Details", "variant": "details" },
-    "specifications": { "title": "Specifications", "variant": "closeup", "focus": "specifications" },
-    "imagery": { "title": "Imagery", "variant": "closeup", "focus": "imagery" },
-    "availability": { "title": "Availability", "variant": "closeup", "focus": "availability" },
-    "pricing": { "title": "Pricing context", "variant": "closeup", "focus": "pricing" },
-    "facilities": { "title": "Facilities", "variant": "closeup", "focus": "facilities" },
-    "decisions": { "title": "Decision actions", "variant": "decisions" }
+    "hero": {
+      "title": "Three ways to discover a space",
+      "variant": "hero",
+      "image": {
+        "src": "/work/speiz/overview-hero.png",
+        "alt": "Speiz warehouse search interface with property listings, search filters, and the Ask Speiz AI banner.",
+        "width": 2880,
+        "height": 1796
+      }
+    },
+    "research": {
+      "title": "Competitor comparison and research findings",
+      "variant": "research"
+    },
+    "ia": {
+      "title": "Information architecture",
+      "variant": "ia"
+    },
+    "wireframe": {
+      "title": "Early flow / wireframe",
+      "variant": "wireframe"
+    },
+    "search": {
+      "title": "Classic Search",
+      "variant": "search"
+    },
+    "picks-overview": {
+      "title": "Speiz Picks overview",
+      "variant": "picks-overview",
+      "caption": "Speiz Picks brings human market expertise into the product through a shortlist curated for a specific tenant request."
+    },
+    "picks-results": {
+      "title": "Speiz Picks results",
+      "variant": "picks-results",
+      "caption": "Curated spaces remain tied to the original request and can be reviewed, accepted, or rejected directly inside the experience."
+    },
+    "ai-starter": {
+      "title": "AI Matches starter",
+      "variant": "ai-starter"
+    },
+    "ai-results": {
+      "title": "AI Matches results",
+      "variant": "ai-results"
+    },
+    "match-score": {
+      "title": "Match score",
+      "variant": "closeup",
+      "focus": "score"
+    },
+    "why-it-fits": {
+      "title": "Why it fits",
+      "variant": "closeup",
+      "focus": "reason"
+    },
+    "sources": {
+      "title": "Sources",
+      "variant": "closeup",
+      "focus": "sources"
+    },
+    "refine": {
+      "title": "Refine criteria",
+      "variant": "closeup",
+      "focus": "criteria"
+    },
+    "details": {
+      "title": "Space Details",
+      "variant": "details"
+    },
+    "specifications": {
+      "title": "Specifications",
+      "variant": "closeup",
+      "focus": "specifications"
+    },
+    "imagery": {
+      "title": "Imagery",
+      "variant": "closeup",
+      "focus": "imagery"
+    },
+    "availability": {
+      "title": "Availability",
+      "variant": "closeup",
+      "focus": "availability"
+    },
+    "pricing": {
+      "title": "Pricing context",
+      "variant": "closeup",
+      "focus": "pricing"
+    },
+    "facilities": {
+      "title": "Facilities",
+      "variant": "closeup",
+      "focus": "facilities"
+    },
+    "decisions": {
+      "title": "Decision actions",
+      "variant": "decisions"
+    }
   },
   "sections": [
     {
-      "id": "role-scope", "nav": "Role & Scope", "label": "ROLE & SCOPE",
+      "id": "role-scope",
+      "nav": "Role & Scope",
+      "label": "ROLE & SCOPE",
       "headline": "Working across design, product, and delivery",
       "paragraphs": [
-        "My responsibility extended beyond designing individual screens.",
-        "I owned major parts of the tenant experience — from understanding user problems and defining product flows to interaction design, detailed UI, and iteration.",
-        "As the product evolved, I also took on product-management responsibilities: translating business needs into requirements, helping shape priorities, working closely with developers through delivery, and collaborating with business development and other stakeholders on product decisions.",
-        "This meant looking at design decisions not only through the lens of usability, but also through business value, implementation constraints, market realities, and how individual features affected the broader product experience."
-      ],
-      "blocks": [{ "type": "columns", "style": "responsibility", "items": [
-        { "title": "PRODUCT", "lines": ["Requirements", "Prioritization", "Feature definition"] },
-        { "title": "DESIGN", "lines": ["Research", "UX flows", "Interaction & UI"] },
-        { "title": "DELIVERY", "lines": ["Developer collaboration", "QA & iteration", "Handoff"] },
-        { "title": "BUSINESS", "lines": ["Stakeholder input", "Tenant needs", "Market constraints"] }
-      ]}]
-    },
-    {
-      "id": "problem", "nav": "Problem", "label": "PROBLEM",
-      "headline": "Warehouse search was fragmented long before it reached the interface",
-      "paragraphs": [
-        "Finding a warehouse often meant piecing together information from multiple listing platforms, PDFs, brokers, and direct conversations with landlords.",
-        "Our early research surfaced recurring problems across the journey: warehouse supply was fragmented, availability was often unclear, important specifications were missing, imagery could be outdated, and tenants relied heavily on PDFs and broker-led email conversations just to understand whether a space was worth considering.",
-        "The challenge therefore wasn't simply to create a better property listing interface.",
-        "It was to help tenants get from a business requirement to a viable and trustworthy shortlist without spending days gathering and verifying information."
-      ],
-      "blocks": [{ "type": "columns", "style": "problem", "items": [
-        { "title": "FRAGMENTED SUPPLY", "text": "Spaces spread across multiple sources" },
-        { "title": "INCOMPLETE INFORMATION", "text": "Missing specifications, pricing, or availability" },
-        { "title": "HARD TO COMPARE", "text": "Different formats and PDF-heavy workflows" },
-        { "title": "SLOW COMMUNICATION", "text": "Long broker-led email chains" },
-        { "title": "LOW CONFIDENCE", "text": "Outdated visuals and unclear vacancy" }
-      ]}]
-    },
-    {
-      "id": "research-insights", "nav": "Research & Insights", "label": "RESEARCH & INSIGHTS",
-      "headline": "The real bottleneck wasn't finding listings — it was knowing which ones were worth pursuing",
-      "paragraphs": [
-        "We combined competitor benchmarking with tenant interviews and conversations with landlords to understand where the existing warehouse-search experience was breaking down.",
-        "The competitor audit covered five major Norwegian commercial real estate platforms and helped us understand what the market already supported — and where important gaps remained.",
-        "Across the research, one pattern became especially important: access to listings alone wasn't enough. Tenants still had to spend significant effort qualifying each option before they could decide whether it deserved further attention.",
-        "That shifted our focus from simply increasing the number of spaces users could browse to improving the quality of the decision journey around them."
+        "I owned major parts of the tenant experience end to end, from research and product flows to detailed UI, requirements, delivery, and iteration. As the product evolved, I also took on product management responsibilities, helping shape priorities and working across design, development, and business."
       ],
       "blocks": [
-        { "type": "media", "media": "research" },
-        { "type": "columns", "style": "insight", "items": [
-          { "title": "01 — Coverage matters", "text": "Users need access to enough of the market before search becomes genuinely useful." },
-          { "title": "02 — Information quality matters", "text": "A listing has limited value when specifications, availability, pricing, or imagery are incomplete." },
-          { "title": "03 — Guidance matters", "text": "Different tenants may need different levels of support when turning a requirement into a viable shortlist." }
-        ]}
+        {
+          "type": "columns",
+          "style": "responsibility",
+          "items": [
+            {
+              "title": "PRODUCT",
+              "lines": [
+                "Requirements",
+                "Prioritization",
+                "Feature definition"
+              ]
+            },
+            {
+              "title": "DESIGN",
+              "lines": [
+                "Research",
+                "UX flows",
+                "Interaction & UI"
+              ]
+            },
+            {
+              "title": "DELIVERY",
+              "lines": [
+                "Developer collaboration",
+                "QA & iteration",
+                "Handoff"
+              ]
+            },
+            {
+              "title": "BUSINESS",
+              "lines": [
+                "Stakeholder alignment",
+                "Tenant needs",
+                "Market constraints"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "design-process", "nav": "Design Process", "label": "DESIGN PROCESS",
+      "id": "problem",
+      "nav": "Problem",
+      "label": "PROBLEM",
+      "headline": "Building a viable shortlist required days of manual verification",
+      "paragraphs": [
+        "Finding a warehouse often meant piecing together information from multiple listing platforms, PDFs, brokers, and direct conversations with landlords. Before tenants could evaluate an option, they first had to verify whether basic property information was current and complete, including availability, specifications, imagery, and pricing."
+      ],
+      "blocks": [
+        {
+          "type": "columns",
+          "style": "problem",
+          "items": [
+            {
+              "title": "Scattered market data",
+              "text": "Property information was spread across multiple listing platforms and sources."
+            },
+            {
+              "title": "Unclear availability",
+              "text": "Vacancy was not always visible or reliably up to date."
+            },
+            {
+              "title": "Missing specifications",
+              "text": "Important operational details were often incomplete or absent."
+            },
+            {
+              "title": "Outdated visuals",
+              "text": "Images did not always reflect the current condition of the space."
+            },
+            {
+              "title": "PDF-heavy evaluation",
+              "text": "Tenants had to compare multiple documents to understand basic details."
+            },
+            {
+              "title": "Broker-led communication",
+              "text": "Clarifying basic information often required long email chains and manual follow-up."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research-insights",
+      "nav": "Research & Insights",
+      "label": "RESEARCH & INSIGHTS",
+      "headline": "Understanding the market before defining the product",
+      "paragraphs": [
+        "We looked at the warehouse-search journey from several angles: how tenants evaluated spaces, how existing platforms structured the market, and how commercial property data could be accessed at scale."
+      ],
+      "blocks": [
+        {
+          "type": "research-tabs",
+          "items": [
+            {
+              "id": "market-landscape",
+              "title": "Market landscape",
+              "description": "Competitor analysis of 5 Norwegian commercial real estate platforms.",
+              "image": {
+                "src": "/work/speiz/market-landscape.png",
+                "width": 2560,
+                "height": 1512,
+                "alt": "Comparison of Finn, Properly, Portally, Malling, and CBRE across discovery, trust, and workflow features."
+              }
+            },
+            {
+              "id": "tenant-journey",
+              "title": "Tenant journey",
+              "description": "How tenants moved from an initial requirement to comparison, verification, and shortlist.",
+              "image": {
+                "src": "/work/speiz/tenant-journey.png",
+                "width": 1280,
+                "height": 751,
+                "alt": "Tenant persona research artifact showing bio, needs, goals, and pain points."
+              }
+            },
+            {
+              "id": "data-infrastructure",
+              "title": "Data infrastructure",
+              "description": "A national commercial real estate database gave access to structured property data across Norway and created the foundation for broader market coverage.",
+              "image": {
+                "src": "/work/speiz/data-infrastructure.png",
+                "width": 1240,
+                "height": 776,
+                "alt": "Speiz property data sources, including the national registry, real estate listings, public sources, and landlord portfolios."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-process",
+      "nav": "Design Process",
+      "label": "DESIGN PROCESS",
       "headline": "Turning a fragmented search journey into a coherent product flow",
       "paragraphs": [
         "Research gave us the problems to solve, but the next challenge was turning them into a product structure that could support discovery, evaluation, and decision-making without overwhelming the user.",
@@ -100,43 +279,98 @@
         "The key shift was from thinking about Speiz as a collection of property listings to designing an end-to-end journey:"
       ],
       "blocks": [
-        { "type": "sequence", "steps": ["Need", "Discover", "Shortlist", "Evaluate", "Decide", "Connect"] },
-        { "type": "process", "stages": [
-          { "title": "INFORMATION ARCHITECTURE", "media": "ia" },
-          { "title": "EARLY FLOW / WIREFRAME", "media": "wireframe" },
-          { "title": "FINAL DIRECTION", "media": "search" }
-        ], "change": "From a collection of property listings to an end-to-end journey: Need → Discover → Shortlist → Evaluate → Decide → Connect." }
+        {
+          "type": "sequence",
+          "steps": [
+            "Need",
+            "Discover",
+            "Shortlist",
+            "Evaluate",
+            "Decide",
+            "Connect"
+          ]
+        },
+        {
+          "type": "process",
+          "stages": [
+            {
+              "title": "INFORMATION ARCHITECTURE",
+              "media": "ia"
+            },
+            {
+              "title": "EARLY FLOW / WIREFRAME",
+              "media": "wireframe"
+            },
+            {
+              "title": "FINAL DIRECTION",
+              "media": "search"
+            }
+          ],
+          "change": "From a collection of property listings to an end-to-end journey: Need → Discover → Shortlist → Evaluate → Decide → Connect."
+        }
       ]
     },
     {
-      "id": "final-solution", "nav": "Final Solution", "label": "FINAL SOLUTION",
+      "id": "final-solution",
+      "nav": "Final Solution",
+      "label": "FINAL SOLUTION",
       "children": [
         {
-          "id": "search-discovery", "nav": "Search & Discovery", "label": "SEARCH & DISCOVERY",
+          "id": "search-discovery",
+          "nav": "Search & Discovery",
+          "label": "SEARCH & DISCOVERY",
           "headline": "Giving users direct control when they already know what they need",
           "paragraphs": [
             "For tenants with clear requirements, Classic Search provided direct access to the market through structured filters, property cards, and a map.",
             "Users could narrow the results by criteria such as location, area, property type, and size, then browse the market independently.",
             "The interface was designed to keep filtering, spatial context, and property information visible together so users could quickly understand both what was available and where."
           ],
-          "blocks": [{ "type": "annotated", "media": "search", "annotations": [
-            { "title": "STRUCTURED FILTERS", "text": "Refine the market using known requirements." },
-            { "title": "MAP + RESULTS", "text": "Evaluate location and supply together." },
-            { "title": "COMPARABLE PROPERTY CARDS", "text": "Surface essential information before opening a space." }
-          ]}]
+          "blocks": [
+            {
+              "type": "annotated",
+              "media": "search",
+              "annotations": [
+                {
+                  "title": "STRUCTURED FILTERS",
+                  "text": "Refine the market using known requirements."
+                },
+                {
+                  "title": "MAP + RESULTS",
+                  "text": "Evaluate location and supply together."
+                },
+                {
+                  "title": "COMPARABLE PROPERTY CARDS",
+                  "text": "Surface essential information before opening a space."
+                }
+              ]
+            }
+          ]
         },
         {
-          "id": "speiz-picks", "nav": "Speiz Picks", "label": "SPEIZ PICKS",
+          "id": "speiz-picks",
+          "nav": "Speiz Picks",
+          "label": "SPEIZ PICKS",
           "headline": "Adding human expertise when search alone wasn't enough",
           "paragraphs": [
             "Not every tenant wanted to search the entire market independently.",
             "Speiz Picks introduced a more guided experience where the Speiz team reviewed a tenant's requirements, searched the market, and manually curated spaces specifically for that request.",
             "The product made this human service visible and actionable rather than leaving it buried in emails. Users could understand how the process worked, review their curated shortlist, and give feedback on individual recommendations."
           ],
-          "blocks": [{ "type": "media", "media": "picks-overview" },{ "type": "media", "media": "picks-results" }]
+          "blocks": [
+            {
+              "type": "media",
+              "media": "picks-overview"
+            },
+            {
+              "type": "media",
+              "media": "picks-results"
+            }
+          ]
         },
         {
-          "id": "ai-matches", "nav": "AI Matches", "label": "AI MATCHES",
+          "id": "ai-matches",
+          "nav": "AI Matches",
+          "label": "AI MATCHES",
           "headline": "Turning a natural-language brief into explainable recommendations",
           "paragraphs": [
             "AI Matches introduced a third way to discover warehouse options.",
@@ -145,33 +379,79 @@
             "This made AI useful not simply as another search interface, but as a way to help users translate an operational need into options they could evaluate."
           ],
           "blocks": [
-            { "type": "annotated", "media": "ai-starter", "annotations": [
-              { "title": "NATURAL-LANGUAGE INPUT", "text": "Start with the business requirement rather than a filter configuration." },
-              { "title": "EXAMPLE PROMPTS", "text": "Show the type and level of detail the system can work with." }
-            ]},
-            { "type": "text", "headline": "Making AI useful meant making it understandable", "paragraphs": [
-              "Commercial real estate decisions involve significant cost, operational constraints, and long-term commitments. Simply presenting an AI-generated shortlist would not be enough.",
-              "We therefore designed AI Matches as a decision-support experience rather than a black-box recommendation engine.",
-              "Recommendations included match signals, explanations, supporting sources, and a summary of where an option worked well — or where it did not fully meet the brief.",
-              "Users could then accept the direction, request more options, or refine the original criteria.",
-              "The goal was not to replace tenant judgment. It was to reduce the work required to reach a shortlist worth investigating."
-            ]},
-            { "type": "media", "media": "ai-results" },
-            { "type": "rail", "title": "Inside the recommendation", "media": ["match-score","why-it-fits","sources","refine"] }
+            {
+              "type": "annotated",
+              "media": "ai-starter",
+              "annotations": [
+                {
+                  "title": "NATURAL-LANGUAGE INPUT",
+                  "text": "Start with the business requirement rather than a filter configuration."
+                },
+                {
+                  "title": "EXAMPLE PROMPTS",
+                  "text": "Show the type and level of detail the system can work with."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "headline": "Making AI useful meant making it understandable",
+              "paragraphs": [
+                "Commercial real estate decisions involve significant cost, operational constraints, and long-term commitments. Simply presenting an AI-generated shortlist would not be enough.",
+                "We therefore designed AI Matches as a decision-support experience rather than a black-box recommendation engine.",
+                "Recommendations included match signals, explanations, supporting sources, and a summary of where an option worked well — or where it did not fully meet the brief.",
+                "Users could then accept the direction, request more options, or refine the original criteria.",
+                "The goal was not to replace tenant judgment. It was to reduce the work required to reach a shortlist worth investigating."
+              ]
+            },
+            {
+              "type": "media",
+              "media": "ai-results"
+            },
+            {
+              "type": "rail",
+              "title": "Inside the recommendation",
+              "media": [
+                "match-score",
+                "why-it-fits",
+                "sources",
+                "refine"
+              ]
+            }
           ]
         },
         {
-          "id": "space-details", "nav": "Space Details", "label": "SPACE DETAILS",
+          "id": "space-details",
+          "nav": "Space Details",
+          "label": "SPACE DETAILS",
           "headline": "Making warehouse options easier to evaluate without relying on PDFs",
           "paragraphs": [
             "Discovery was only useful if tenants could understand what they had found.",
             "A promising warehouse still needed to be evaluated against operational requirements: size, location, availability, facilities, pricing, imagery, and other specifications.",
             "We therefore focused on bringing the information needed for early evaluation into a structured property experience rather than forcing users to move between listings, PDFs, and broker communication."
           ],
-          "blocks": [{ "type": "media", "media": "details" },{ "type": "rail", "title": "A closer look at the space", "media": ["specifications","imagery","availability","pricing","facilities"] }]
+          "blocks": [
+            {
+              "type": "media",
+              "media": "details"
+            },
+            {
+              "type": "rail",
+              "title": "A closer look at the space",
+              "media": [
+                "specifications",
+                "imagery",
+                "availability",
+                "pricing",
+                "facilities"
+              ]
+            }
+          ]
         },
         {
-          "id": "decision-actions", "nav": "Decision Actions", "label": "DECISION ACTIONS",
+          "id": "decision-actions",
+          "nav": "Decision Actions",
+          "label": "DECISION ACTIONS",
           "headline": "Turning browsing into an active decision process",
           "paragraphs": [
             "A marketplace can easily become an endless browsing experience.",
@@ -179,12 +459,30 @@
             "Across the product, users could react to spaces rather than simply open and close listings. Curated recommendations could be accepted or rejected, while the broader experience supported lightweight interest and connection states.",
             "These actions created clearer signals for both the tenant and the Speiz team, helping the product identify which options were worth pursuing and which should be removed from consideration."
           ],
-          "blocks": [{ "type": "sequence", "steps": ["Suggested","Reviewed","Accepted / Rejected","Connect / Next action"], "caption": "Examples of decision states across the product; not one combined flow." },{ "type": "media", "media": "decisions" }]
+          "blocks": [
+            {
+              "type": "sequence",
+              "steps": [
+                "Suggested",
+                "Reviewed",
+                "Accepted / Rejected",
+                "Connect / Next action"
+              ],
+              "caption": "Examples of decision states across the product; not one combined flow."
+            },
+            {
+              "type": "media",
+              "media": "decisions"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "impact", "nav": "Impact", "label": "IMPACT", "headline": "What changed",
+      "id": "impact",
+      "nav": "Impact",
+      "label": "IMPACT",
+      "headline": "What changed",
       "paragraphs": [
         "The tenant experience evolved from a conventional property-search model into a product with multiple layers of discovery and guidance.",
         "Users could explore the market independently through Classic Search, receive human-curated options through Speiz Picks, or use AI Matches to turn a natural-language requirement into an explained shortlist.",
@@ -193,7 +491,10 @@
       ]
     },
     {
-      "id": "learnings", "nav": "Learnings", "label": "LEARNINGS", "headline": "Better search was not enough",
+      "id": "learnings",
+      "nav": "Learnings",
+      "label": "LEARNINGS",
+      "headline": "Better search was not enough",
       "paragraphs": [
         "One of the biggest lessons from Speiz was that access to more listings does not automatically create a better decision experience.",
         "The harder problem was creating confidence: Are these options relevant? Is the underlying information reliable? Why is this space being recommended? What should I do next?",
@@ -202,6 +503,22 @@
       ]
     }
   ],
-  "gallery": { "type": "gallery", "title": "Selected product work", "text": "A closer look at the tenant experience across discovery, matching, evaluation, and decision-making.", "media": ["search","picks-overview","picks-results","ai-starter","ai-results","details","decisions"] },
-  "nextProject": { "title": "AI Video Research", "slug": "ai-video-research" }
+  "gallery": {
+    "type": "gallery",
+    "title": "Selected product work",
+    "text": "A closer look at the tenant experience across discovery, matching, evaluation, and decision-making.",
+    "media": [
+      "search",
+      "picks-overview",
+      "picks-results",
+      "ai-starter",
+      "ai-results",
+      "details",
+      "decisions"
+    ]
+  },
+  "nextProject": {
+    "title": "AI Video Research",
+    "slug": "ai-video-research"
+  }
 }

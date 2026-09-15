@@ -303,3 +303,110 @@
 @media(max-width:700px) {
   .editorial-overview-summary { grid-template-columns: 1fr; gap: 28px; }
 }
+
+/* Figma reference treatment, limited to the first four Speiz reading sections. */
+.speiz-reference-section > .editorial-section-heading > .eyebrow {
+  color: #304ee8;
+  font-weight: 600;
+}
+.speiz-reference-section > .editorial-section-heading h2 {
+  color: #0d1118;
+  font-weight: 600;
+  font-size: clamp(30px, 3vw, 44px);
+  letter-spacing: -.025em;
+  line-height: 1.2;
+  text-wrap: initial;
+  margin: 20px 0 24px;
+}
+.speiz-reference-section > .editorial-prose {
+  max-width: 740px;
+  color: #536075;
+  font-size: 16px;
+  line-height: 1.65;
+}
+.speiz-reference-section .editorial-blocks { margin-top: 36px; }
+.speiz-reference-section .editorial-overview-summary { gap: 20px; margin-top: 32px; }
+.speiz-reference-section .editorial-overview-summary > div,
+.speiz-reference-section .editorial-columns > div {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 24px;
+}
+.speiz-reference-section .editorial-overview-summary h3,
+.speiz-reference-section .columns-responsibility h4 {
+  color: #929eb1;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .7px;
+  margin: 0 0 16px;
+}
+.speiz-reference-section .editorial-overview-summary .editorial-prose,
+.speiz-reference-section .editorial-columns p,
+.speiz-reference-section .editorial-columns li {
+  color: #536075;
+  font-size: 16px;
+  line-height: 1.65;
+}
+.speiz-reference-section .columns-responsibility {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding: 0;
+  border: 0;
+}
+.speiz-reference-section .columns-responsibility > div { padding: 20px 18px; }
+.speiz-reference-section .columns-responsibility li + li { margin-top: 14px; }
+.speiz-reference-section .columns-problem {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding: 0;
+}
+.speiz-reference-section .columns-problem > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: start;
+  column-gap: 10px;
+  row-gap: 20px;
+  padding: 22px 20px;
+}
+.speiz-reference-section .problem-index {
+  border: 0;
+  padding: 0;
+  color: #304ee8;
+  font-size: 21px;
+  line-height: 1.4;
+  grid-row: auto;
+}
+.speiz-reference-section .problem-index > span { display: none; }
+.speiz-reference-section .columns-problem h4 {
+  color: #0d1118;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 3px 0 0;
+}
+.speiz-reference-section .columns-problem p { grid-column: 1 / -1; }
+.research-tabs { display: grid; grid-template-columns: 1fr 2fr; gap: 28px; align-items: start; }
+.research-tab-list { border-left: 3px solid #f5f6f8; display: grid; gap: 24px; }
+.research-tab-list button { text-align: left; position: relative; padding: 8px 0 8px 14px; }
+.research-tab-list button[aria-selected="true"]::before {
+  content: ''; position: absolute; left: -3px; top: 0; bottom: 0; width: 3px;
+  border-radius: 3px; background: #304ee8;
+}
+.research-tab-title { display: block; color: #0d1118; font-size: 16px; font-weight: 500; line-height: 1.4; }
+.research-tab-description { display: block; color: #536075; font-size: 15px; line-height: 1.65; margin-top: 12px; }
+.research-panels { min-width: 0; border: 1px solid #edf0f4; border-radius: 16px; padding: 22px; background: #fff; }
+.research-panels [role="tabpanel"] { aspect-ratio: 1.62; }
+.research-panels img { width: 100%; height: 100%; object-fit: contain; display: block; }
+@media(max-width:1100px) {
+  .speiz-reference-section .columns-responsibility { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media(max-width:700px) {
+  .speiz-reference-section .columns-problem { grid-template-columns: 1fr; }
+  .speiz-reference-section .editorial-overview-summary { grid-template-columns: 1fr; }
+  .research-tabs { grid-template-columns: 1fr; }
+  .research-tab-list { gap: 12px; }
+  .research-panels { padding: 16px; }
+}
+@media(max-width:400px) {
+  .speiz-reference-section .columns-responsibility { grid-template-columns: 1fr; }
+}

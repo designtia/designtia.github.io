@@ -6,7 +6,9 @@ export type EditorialMedia = {
   caption?: string;
   image?: { src: string; alt: string; width: number; height: number };
 };
+export type ResearchItem = { id: string; title: string; description: string; image: NonNullable<EditorialMedia["image"]> };
 export type EditorialBlock =
+  | { type: "research-tabs"; items: ResearchItem[] }
   | { type: 'text'; paragraphs: string[]; headline?: string }
   | { type: 'media'; media: string }
   | { type: 'annotated'; media: string; annotations: { title: string; text: string }[] }

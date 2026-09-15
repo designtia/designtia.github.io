@@ -6,6 +6,7 @@ import { CaseStudyTOC } from './CaseStudyTOC';
 import { CaseStudyHero, SectionHeading, AnnotatedMedia, ProcessEvolution, ProjectGallery } from './CaseStudyParts';
 import { MediaPlaceholder } from './MediaPlaceholder';
 import { MediaRail } from './MediaRail';
+import { ResearchTabs } from './ResearchTabs';
 import { MediaReveal } from './MediaReveal';
 import './editorial.css';
 
@@ -14,6 +15,7 @@ function Paragraphs({ paragraphs }: { paragraphs: string[] }) {
 }
 function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy }) {
   switch (block.type) {
+    case 'research-tabs': return <ResearchTabs items={block.items} />;
     case 'text': return <div className="editorial-text-block">{block.headline && <h4>{block.headline}</h4>}<Paragraphs paragraphs={block.paragraphs} /></div>;
     case 'media': return <MediaPlaceholder media={study.media[block.media]} />;
     case 'annotated': return <AnnotatedMedia media={study.media[block.media]} annotations={block.annotations} />;
@@ -28,7 +30,7 @@ function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy 
   }
 }
 function Section({ section, study, child = false }: { section: EditorialSection; study: EditorialStudy; child?: boolean }) {
-  return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
+  return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${study.slug === 'speiz' && ['role-scope', 'problem', 'research-insights'].includes(section.id) ? 'speiz-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
     <SectionHeading label={section.label} headline={section.headline} child={child} />
     {section.paragraphs && <Paragraphs paragraphs={section.paragraphs} />}
     {section.blocks && <div className="editorial-blocks">{section.blocks.map((block,i) => <Block block={block} study={study} key={i} />)}</div>}
@@ -41,7 +43,7 @@ export function CaseStudyLayout({ study }: { study: EditorialStudy }) {
       <CaseStudyHero study={study} />
     <div className="editorial-case shell"><CaseStudyTOC sections={study.sections} />
       <div className="editorial-main">
-        <section id="overview" data-toc-section tabIndex={-1} className="editorial-overview">
+        <section id="overview" data-toc-section tabIndex={-1} className={`editorial-overview ${study.slug === 'speiz' ? 'speiz-reference-section' : ''}`}>
           {study.overview ? <>
             <SectionHeading label="OVERVIEW" headline={study.overview.headline} />
             <div className="editorial-overview-summary">
