@@ -8,14 +8,16 @@ export type EditorialMedia = {
 };
 export type ResearchItem = { id: string; title: string; description: string; image: NonNullable<EditorialMedia["image"]> };
 export type ComparisonState = { label: string; frames: { label: string; image: NonNullable<EditorialMedia["image"]> }[] };
+export type FocusItem = { base?: NonNullable<EditorialMedia["image"]>; title: string; description: string; position: "left" | "right" | "center"; image: NonNullable<EditorialMedia["image"]> };
 export type EditorialBlock =
+  | { type: "focus-tabs"; label?: string; base: NonNullable<EditorialMedia["image"]>; items: FocusItem[] }
   | { type: "before-after"; states: ComparisonState[] }
   | { type: "research-tabs"; items: ResearchItem[] }
   | { type: 'text'; paragraphs: string[]; headline?: string }
   | { type: 'media'; media: string }
   | { type: 'titled-media'; title: string; description: string; media: string }
   | { type: 'annotated'; media: string; annotations: { title: string; text: string }[] }
-  | { type: 'columns'; items: { title: string; text?: string; lines?: string[] }[]; style?: 'responsibility' | 'problem' | 'insight' }
+  | { type: 'columns'; items: { title: string; text?: string; lines?: string[] }[]; style?: 'responsibility' | 'problem' | 'insight' | 'discovery' }
   | { type: 'sequence'; steps: string[]; caption?: string }
   | { type: 'process'; stages: { title: string; media: string }[]; change: string }
   | { type: 'rail'; title: string; media: string[] }

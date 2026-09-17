@@ -7,6 +7,7 @@ import { CaseStudyHero, SectionHeading, AnnotatedMedia, ProcessEvolution, Projec
 import { MediaPlaceholder } from './MediaPlaceholder';
 import { MediaRail } from './MediaRail';
 import { BeforeAfterSequence } from './BeforeAfterSequence';
+import { FocusTabs } from './FocusTabs';
 import { ResearchTabs } from './ResearchTabs';
 import { MediaReveal } from './MediaReveal';
 import './editorial.css';
@@ -16,6 +17,7 @@ function Paragraphs({ paragraphs }: { paragraphs: string[] }) {
 }
 function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy }) {
   switch (block.type) {
+    case 'focus-tabs': return <FocusTabs base={block.base} items={block.items} label={block.label} />;
     case 'before-after': return <BeforeAfterSequence states={block.states} />;
     case 'research-tabs': return <ResearchTabs items={block.items} />;
     case 'text': return <div className="editorial-text-block">{block.headline && <h4>{block.headline}</h4>}<Paragraphs paragraphs={block.paragraphs} /></div>;
@@ -28,7 +30,7 @@ function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy 
     case 'annotated': return <AnnotatedMedia media={study.media[block.media]} annotations={block.annotations} />;
     case 'columns': return <div className={`editorial-columns columns-${block.style ?? 'insight'}`}>{block.items.map((item,i) => <div key={item.title}>
       {block.style === 'problem' && <span className="problem-index" aria-hidden="true">{String(i+1).padStart(2,'0')} <span>↘</span></span>}
-      <h4>{item.title}</h4>{item.text && <p>{item.text}</p>}{item.lines && <ul>{item.lines.map(line => <li key={line}>{line}</li>)}</ul>}
+      <h4>{block.style === 'discovery' && <span className="discovery-number">{String(i+1).padStart(2,'0')}</span>}{item.title}</h4>{item.text && <p>{item.text}</p>}{item.lines && <ul>{item.lines.map(line => <li key={line}>{line}</li>)}</ul>}
     </div>)}</div>;
     case 'sequence': return <figure className="editorial-sequence"><ol>{block.steps.map((step,i) => <li key={step}>{step}{i < block.steps.length - 1 && <span aria-hidden="true">→</span>}</li>)}</ol>{block.caption && <figcaption>{block.caption}</figcaption>}</figure>;
     case 'process': return <ProcessEvolution block={block} media={study.media} />;

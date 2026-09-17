@@ -335,29 +335,78 @@
         {
           "id": "search-discovery",
           "nav": "Search & Discovery",
-          "label": "SEARCH & DISCOVERY",
-          "headline": "Giving users direct control when they already know what they need",
+          "label": "FINAL SOLUTION",
+          "headline": "Three ways to reach a relevant shortlist",
           "paragraphs": [
-            "For tenants with clear requirements, Classic Search provided direct access to the market through structured filters, property cards, and a map.",
-            "Users could narrow the results by criteria such as location, area, property type, and size, then browse the market independently.",
-            "The interface was designed to keep filtering, spatial context, and property information visible together so users could quickly understand both what was available and where."
+            "Once users could explore the product before registering, the next challenge was supporting different ways of finding relevant spaces. Speiz offered three discovery paths built on the same market data: direct search, human curation, and AI-assisted matching."
           ],
           "blocks": [
             {
-              "type": "annotated",
-              "media": "search",
-              "annotations": [
+              "type": "columns",
+              "style": "discovery",
+              "items": [
                 {
-                  "title": "STRUCTURED FILTERS",
-                  "text": "Refine the market using known requirements."
+                  "title": "Classic Search",
+                  "text": "For tenants with clear criteria who want direct control over search and filtering."
                 },
                 {
-                  "title": "MAP + RESULTS",
-                  "text": "Evaluate location and supply together."
+                  "title": "Speiz Picks",
+                  "text": "A shortlist manually curated by the Speiz team for a specific tenant request."
                 },
                 {
-                  "title": "COMPARABLE PROPERTY CARDS",
-                  "text": "Surface essential information before opening a space."
+                  "title": "AI Matches",
+                  "text": "Natural-language requirements turned into ranked, explained recommendations."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "headline": "Direct market access for tenants who know what they need",
+              "paragraphs": [
+                "For tenants with clear requirements, Classic Search provided direct access through structured filters, property results, and a map. Users could narrow options by criteria such as location, size, and move-in date, then explore relevant spaces independently."
+              ]
+            },
+            {
+              "type": "focus-tabs",
+              "base": {
+                "src": "/work/speiz/classic-search.png",
+                "alt": "Speiz Classic Search — Classic Search",
+                "width": 1600,
+                "height": 1138
+              },
+              "items": [
+                {
+                  "title": "Structured filters",
+                  "description": "Refine the market using known requirements.",
+                  "position": "left",
+                  "image": {
+                    "src": "/work/speiz/structured-filters.png",
+                    "alt": "Speiz Classic Search — Structured filters",
+                    "width": 388,
+                    "height": 1320
+                  }
+                },
+                {
+                  "title": "Map + results",
+                  "description": "Understand available supply and location together.",
+                  "position": "right",
+                  "image": {
+                    "src": "/work/speiz/map-results.png",
+                    "alt": "Speiz Classic Search — Map + results",
+                    "width": 636,
+                    "height": 1320
+                  }
+                },
+                {
+                  "title": "Comparable listings",
+                  "description": "See essential property information before opening a space.",
+                  "position": "center",
+                  "image": {
+                    "src": "/work/speiz/comparable-listings.png",
+                    "alt": "Speiz Classic Search — Comparable listings",
+                    "width": 969,
+                    "height": 1320
+                  }
                 }
               ]
             }
@@ -369,18 +418,59 @@
           "label": "SPEIZ PICKS",
           "headline": "Adding human expertise when search alone wasn't enough",
           "paragraphs": [
-            "Not every tenant wanted to search the entire market independently.",
-            "Speiz Picks introduced a more guided experience where the Speiz team reviewed a tenant's requirements, searched the market, and manually curated spaces specifically for that request.",
-            "The product made this human service visible and actionable rather than leaving it buried in emails. Users could understand how the process worked, review their curated shortlist, and give feedback on individual recommendations."
+            "Not every tenant wanted to search the entire market independently. Speiz Picks introduced a guided experience where the Speiz team reviewed a tenant’s requirements, searched the market, and curated a shortlist specifically for that request."
           ],
           "blocks": [
             {
-              "type": "media",
-              "media": "picks-overview"
-            },
-            {
-              "type": "media",
-              "media": "picks-results"
+              "type": "focus-tabs",
+              "label": "Speiz Picks features",
+              "base": {
+                "src": "/work/speiz/picks-guided-base.png",
+                "alt": "Speiz Picks — Guided process&Curated shortlist",
+                "width": 1600,
+                "height": 1138
+              },
+              "items": [
+                {
+                  "title": "Guided process",
+                  "description": "Understand the tenant’s needs through a personal call and market review.",
+                  "position": "right",
+                  "image": {
+                    "src": "/work/speiz/picks-guided-focus.png",
+                    "alt": "Speiz Picks — Guided",
+                    "width": 584,
+                    "height": 1320
+                  }
+                },
+                {
+                  "title": "Curated shortlist",
+                  "description": "Review spaces selected specifically for the original request.",
+                  "position": "left",
+                  "image": {
+                    "src": "/work/speiz/picks-shortlist-focus.png",
+                    "alt": "Speiz Picks — Shortlist",
+                    "width": 730,
+                    "height": 820
+                  }
+                },
+                {
+                  "title": "Feedback loop",
+                  "description": "Accept, reject, and comment on recommendations directly in the product.",
+                  "position": "center",
+                  "image": {
+                    "src": "/work/speiz/picks-feedback-focus.png",
+                    "alt": "Speiz Picks — Feedback loop zoom",
+                    "width": 332,
+                    "height": 502
+                  },
+                  "base": {
+                    "src": "/work/speiz/picks-feedback-base.png",
+                    "alt": "Speiz Picks — Feedback Loop",
+                    "width": 1600,
+                    "height": 1138
+                  }
+                }
+              ]
             }
           ]
         },
