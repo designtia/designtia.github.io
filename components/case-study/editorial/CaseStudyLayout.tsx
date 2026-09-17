@@ -17,6 +17,11 @@ function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy 
   switch (block.type) {
     case 'research-tabs': return <ResearchTabs items={block.items} />;
     case 'text': return <div className="editorial-text-block">{block.headline && <h4>{block.headline}</h4>}<Paragraphs paragraphs={block.paragraphs} /></div>;
+    case 'titled-media': return <div className="editorial-process-block">
+      <h3>{block.title}</h3>
+      <Paragraphs paragraphs={[block.description]} />
+      <MediaPlaceholder media={study.media[block.media]} showCaption={false} />
+    </div>;
     case 'media': return <MediaPlaceholder media={study.media[block.media]} />;
     case 'annotated': return <AnnotatedMedia media={study.media[block.media]} annotations={block.annotations} />;
     case 'columns': return <div className={`editorial-columns columns-${block.style ?? 'insight'}`}>{block.items.map((item,i) => <div key={item.title}>
@@ -30,7 +35,7 @@ function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy 
   }
 }
 function Section({ section, study, child = false }: { section: EditorialSection; study: EditorialStudy; child?: boolean }) {
-  return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${study.slug === 'speiz' && ['role-scope', 'problem', 'research-insights'].includes(section.id) ? 'speiz-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
+  return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${study.slug === 'speiz' && ['role-scope', 'problem', 'research-insights', 'design-process'].includes(section.id) ? 'speiz-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
     <SectionHeading label={section.label} headline={section.headline} child={child} />
     {section.paragraphs && <Paragraphs paragraphs={section.paragraphs} />}
     {section.blocks && <div className="editorial-blocks">{section.blocks.map((block,i) => <Block block={block} study={study} key={i} />)}</div>}

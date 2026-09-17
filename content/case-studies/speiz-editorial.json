@@ -126,6 +126,36 @@
     "decisions": {
       "title": "Decision actions",
       "variant": "decisions"
+    },
+    "process-information-architecture": {
+      "title": "Information architecture",
+      "variant": "ia",
+      "image": {
+        "src": "/work/speiz/process-information-architecture.png",
+        "alt": "Speiz information architecture connecting registration, onboarding, exploration, matches, leases, messages, profiles, and settings.",
+        "width": 1840,
+        "height": 1373
+      }
+    },
+    "process-core-flows": {
+      "title": "Core flows",
+      "variant": "ia",
+      "image": {
+        "src": "/work/speiz/process-core-flows.png",
+        "alt": "Speiz wireframes for browsing properties, filtered search, property details, sign-in, and onboarding.",
+        "width": 1840,
+        "height": 1727
+      }
+    },
+    "process-product-system": {
+      "title": "Product system",
+      "variant": "ia",
+      "image": {
+        "src": "/work/speiz/process-product-system.png",
+        "alt": "Speiz interface components including buttons, inputs, selection controls, property cards, and filters.",
+        "width": 1840,
+        "height": 3233
+      }
     }
   },
   "sections": [
@@ -272,41 +302,28 @@
       "id": "design-process",
       "nav": "Design Process",
       "label": "DESIGN PROCESS",
-      "headline": "Turning a fragmented search journey into a coherent product flow",
+      "headline": "Structuring the journey from requirement to connection",
       "paragraphs": [
-        "Research gave us the problems to solve, but the next challenge was turning them into a product structure that could support discovery, evaluation, and decision-making without overwhelming the user.",
-        "I mapped the core tenant journey, reorganized the information architecture, explored the main flows through wireframes, and progressively moved the experience toward a more guided model.",
-        "The key shift was from thinking about Speiz as a collection of property listings to designing an end-to-end journey:"
+        "Research helped define what the product needed to solve. The next challenge was turning those findings into a coherent journey that could support discovery, evaluation, and decision-making without overwhelming the user."
       ],
       "blocks": [
         {
-          "type": "sequence",
-          "steps": [
-            "Need",
-            "Discover",
-            "Shortlist",
-            "Evaluate",
-            "Decide",
-            "Connect"
-          ]
+          "type": "titled-media",
+          "title": "Information architecture",
+          "description": "Organising market data, property information, requests, and user actions into a structure that could scale as the product evolved.",
+          "media": "process-information-architecture"
         },
         {
-          "type": "process",
-          "stages": [
-            {
-              "title": "INFORMATION ARCHITECTURE",
-              "media": "ia"
-            },
-            {
-              "title": "EARLY FLOW / WIREFRAME",
-              "media": "wireframe"
-            },
-            {
-              "title": "FINAL DIRECTION",
-              "media": "search"
-            }
-          ],
-          "change": "From a collection of property listings to an end-to-end journey: Need → Discover → Shortlist → Evaluate → Decide → Connect."
+          "type": "titled-media",
+          "title": "Core flows",
+          "description": "Mapping how tenants moved between search, recommendations, property evaluation, and decision-making.",
+          "media": "process-core-flows"
+        },
+        {
+          "type": "titled-media",
+          "title": "Product system",
+          "description": "Translating the core flows into reusable interface patterns for search, filtering, property evaluation, and user actions.",
+          "media": "process-product-system"
         }
       ]
     },

@@ -426,3 +426,24 @@
 .editorial-case[data-project="speiz"] .editorial-section-heading {
   max-width: none;
 }
+
+/* Full-width Design Process artifacts, with the same rhythm for every stage. */
+#design-process.speiz-reference-section > .editorial-blocks { gap: 64px; }
+.editorial-process-block { width: 100%; min-width: 0; }
+.editorial-process-block > h3 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -.02em;
+  line-height: 1.3;
+}
+.editorial-process-block > .editorial-prose {
+  color: #536075;
+  font-size: 16px;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+.editorial-process-block > .editorial-media { width: 100%; max-width: none; }
+@media(max-width:700px) {
+  #design-process.speiz-reference-section > .editorial-blocks { gap: 48px; }
+}
