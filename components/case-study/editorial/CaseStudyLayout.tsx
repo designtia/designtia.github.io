@@ -6,6 +6,7 @@ import { CaseStudyTOC } from './CaseStudyTOC';
 import { CaseStudyHero, SectionHeading, AnnotatedMedia, ProcessEvolution, ProjectGallery } from './CaseStudyParts';
 import { MediaPlaceholder } from './MediaPlaceholder';
 import { MediaRail } from './MediaRail';
+import { BeforeAfterSequence } from './BeforeAfterSequence';
 import { ResearchTabs } from './ResearchTabs';
 import { MediaReveal } from './MediaReveal';
 import './editorial.css';
@@ -15,6 +16,7 @@ function Paragraphs({ paragraphs }: { paragraphs: string[] }) {
 }
 function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy }) {
   switch (block.type) {
+    case 'before-after': return <BeforeAfterSequence states={block.states} />;
     case 'research-tabs': return <ResearchTabs items={block.items} />;
     case 'text': return <div className="editorial-text-block">{block.headline && <h4>{block.headline}</h4>}<Paragraphs paragraphs={block.paragraphs} /></div>;
     case 'titled-media': return <div className="editorial-process-block">

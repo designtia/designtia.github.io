@@ -493,6 +493,117 @@
             }
           ]
         }
+      ],
+      "headline": "Opening the product before asking users to commit",
+      "paragraphs": [
+        "We moved registration from the start of the journey to the moment of intent. Instead of asking users to sign up before seeing value, tenants could explore and evaluate the market first, registering only when they wanted to connect."
+      ],
+      "blocks": [
+        {
+          "type": "before-after",
+          "states": [
+            {
+              "label": "Before",
+              "frames": [
+                {
+                  "label": "Landing",
+                  "image": {
+                    "src": "/work/speiz/before-1.png",
+                    "alt": "Speiz before redesign: Landing.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "label": "Onboarding · Introduction",
+                  "image": {
+                    "src": "/work/speiz/before-2.png",
+                    "alt": "Speiz before redesign: Onboarding · Introduction.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "label": "Onboarding · Location",
+                  "image": {
+                    "src": "/work/speiz/before-3.png",
+                    "alt": "Speiz before redesign: Onboarding · Location.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "label": "Onboarding · Space requirements",
+                  "image": {
+                    "src": "/work/speiz/before-4.png",
+                    "alt": "Speiz before redesign: Onboarding · Space requirements.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "label": "Account creation",
+                  "image": {
+                    "src": "/work/speiz/before-5.png",
+                    "alt": "Speiz before redesign: Account creation.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "label": "Results",
+                  "image": {
+                    "src": "/work/speiz/before-6.png",
+                    "alt": "Speiz before redesign: Results.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                }
+              ]
+            },
+            {
+              "label": "After",
+              "frames": [
+                {
+                  "label": "Explore",
+                  "image": {
+                    "src": "/work/speiz/after-1.png",
+                    "alt": "Speiz after redesign: Explore.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "label": "Filter",
+                  "image": {
+                    "src": "/work/speiz/after-2.png",
+                    "alt": "Speiz after redesign: Filter.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "label": "Space details",
+                  "image": {
+                    "src": "/work/speiz/after-3.png",
+                    "alt": "Speiz after redesign: Space details.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "label": "Connect/Register",
+                  "image": {
+                    "src": "/work/speiz/after-4.png",
+                    "alt": "Speiz after redesign: Connect/Register.",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {

@@ -7,7 +7,9 @@ export type EditorialMedia = {
   image?: { src: string; alt: string; width: number; height: number };
 };
 export type ResearchItem = { id: string; title: string; description: string; image: NonNullable<EditorialMedia["image"]> };
+export type ComparisonState = { label: string; frames: { label: string; image: NonNullable<EditorialMedia["image"]> }[] };
 export type EditorialBlock =
+  | { type: "before-after"; states: ComparisonState[] }
   | { type: "research-tabs"; items: ResearchItem[] }
   | { type: 'text'; paragraphs: string[]; headline?: string }
   | { type: 'media'; media: string }

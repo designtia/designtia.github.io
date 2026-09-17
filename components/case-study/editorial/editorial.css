@@ -447,3 +447,27 @@
 @media(max-width:700px) {
   #design-process.speiz-reference-section > .editorial-blocks { gap: 48px; }
 }
+
+/* Final Solution comparison: keep the existing feature sections untouched. */
+[data-project="speiz"] #final-solution > .editorial-section-heading .eyebrow { color: #304ee8; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+[data-project="speiz"] #final-solution > .editorial-section-heading h2 { font-size: clamp(30px, 3.1vw, 44px); font-weight: 600; }
+.comparison { width: 100%; min-width: 0; }
+.comparison-tabs { display: flex; width: min(100%, 320px); padding: 4px; margin-bottom: 12px; background: #f8f9fa; border-radius: 10px; }
+.comparison-tabs button { flex: 1; border: 0; background: transparent; padding: 12px 20px; border-radius: 7px; color: #526074; font: inherit; cursor: pointer; }
+.comparison-tabs button[aria-selected="true"] { background: white; color: #10141b; }
+.comparison-canvas { background: #f8f9fa; border-radius: 16px; overflow: hidden; }
+.comparison-rail { position: relative; display: flex; gap: 24px; overflow-x: auto; padding: 24px; scroll-snap-type: x mandatory; scroll-padding-inline: 24px; overscroll-behavior-x: contain; }
+.comparison-rail::after { content: ''; flex: 0 0 8%; }
+.comparison-frame { flex: 0 0 88%; min-width: 0; margin: 0; scroll-snap-align: start; }
+.comparison-frame figcaption { margin-bottom: 10px; color: #687488; font-size: 12px; }
+.comparison-frame img { display: block; width: 100%; max-width: none; height: auto; border-radius: 12px; }
+.comparison-controls { display: flex; justify-content: center; padding: 4px 16px 16px; }
+.comparison-controls button { width: 28px; height: 28px; display: grid; place-items: center; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.comparison-controls span { width: 6px; height: 6px; border-radius: 8px; background: #abb4c1; }
+.comparison-controls [aria-current="step"] span { width: 20px; background: #657389; }
+.comparison button:focus-visible,.comparison-rail:focus-visible { outline: 2px solid #304ee8; outline-offset: -2px; }
+@media (max-width: 600px) {
+  .comparison-rail { padding: 16px; gap: 16px; scroll-padding-inline: 16px; }
+  .comparison-frame { flex-basis: 94%; }
+  .comparison-rail::after { flex-basis: 0; }
+}
