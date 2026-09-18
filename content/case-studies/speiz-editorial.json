@@ -364,7 +364,8 @@
               "headline": "Direct market access for tenants who know what they need",
               "paragraphs": [
                 "For tenants with clear requirements, Classic Search provided direct access through structured filters, property results, and a map. Users could narrow options by criteria such as location, size, and move-in date, then explore relevant spaces independently."
-              ]
+              ],
+              "eyebrow": "SEARCH & DISCOVERY"
             },
             {
               "type": "focus-tabs",
@@ -480,49 +481,65 @@
           "label": "AI MATCHES",
           "headline": "Turning a natural-language brief into explainable recommendations",
           "paragraphs": [
-            "AI Matches introduced a third way to discover warehouse options.",
-            "Instead of translating every requirement into a set of filters, tenants could describe what they needed in natural language — for example size, location, loading access, office requirements, move-in timing, or operational constraints.",
-            "The system then returned a ranked shortlist of relevant spaces together with additional context explaining how each option matched the request.",
-            "This made AI useful not simply as another search interface, but as a way to help users translate an operational need into options they could evaluate."
+            "Instead of translating every requirement into filters, tenants could describe what they needed in natural language. AI Matches turned that brief into a ranked shortlist and explained how each space matched the request."
           ],
           "blocks": [
             {
-              "type": "annotated",
-              "media": "ai-starter",
-              "annotations": [
+              "type": "focus-tabs",
+              "label": "AI Matches features",
+              "base": {
+                "src": "/work/speiz/ai-brief-screen.png",
+                "alt": "Speiz AI Matches — Natural-language brief",
+                "width": 2880,
+                "height": 2048
+              },
+              "items": [
                 {
-                  "title": "NATURAL-LANGUAGE INPUT",
-                  "text": "Start with the business requirement rather than a filter configuration."
+                  "title": "Natural-language brief",
+                  "description": "Describe operational requirements in everyday language instead of building a complex filter set.",
+                  "position": "center",
+                  "image": {
+                    "src": "/work/speiz/ai-brief-screen.png",
+                    "alt": "Speiz AI Matches — Natural-language brief",
+                    "width": 2880,
+                    "height": 2048
+                  },
+                  "fullScreen": true
                 },
                 {
-                  "title": "EXAMPLE PROMPTS",
-                  "text": "Show the type and level of detail the system can work with."
+                  "title": "Ranked shortlist",
+                  "description": "Surface the most relevant spaces first using the tenant’s original requirements.",
+                  "position": "left",
+                  "image": {
+                    "src": "/work/speiz/ai-ranked-focus.png",
+                    "alt": "Speiz AI Matches — Ranked shortlist",
+                    "width": 481,
+                    "height": 645
+                  },
+                  "base": {
+                    "src": "/work/speiz/ai-results-screen.png",
+                    "alt": "Speiz AI Matches — Ranked shortlist&Explanable matching",
+                    "width": 2880,
+                    "height": 2048
+                  }
+                },
+                {
+                  "title": "Explainable matching",
+                  "description": "Show why each space fits, where information is missing, and which sources support the recommendation.",
+                  "position": "right",
+                  "image": {
+                    "src": "/work/speiz/ai-explain-focus.png",
+                    "alt": "Speiz AI Matches — Explainable matching",
+                    "width": 762,
+                    "height": 1060
+                  },
+                  "base": {
+                    "src": "/work/speiz/ai-results-screen.png",
+                    "alt": "Speiz AI Matches — Ranked shortlist&Explanable matching",
+                    "width": 2880,
+                    "height": 2048
+                  }
                 }
-              ]
-            },
-            {
-              "type": "text",
-              "headline": "Making AI useful meant making it understandable",
-              "paragraphs": [
-                "Commercial real estate decisions involve significant cost, operational constraints, and long-term commitments. Simply presenting an AI-generated shortlist would not be enough.",
-                "We therefore designed AI Matches as a decision-support experience rather than a black-box recommendation engine.",
-                "Recommendations included match signals, explanations, supporting sources, and a summary of where an option worked well — or where it did not fully meet the brief.",
-                "Users could then accept the direction, request more options, or refine the original criteria.",
-                "The goal was not to replace tenant judgment. It was to reduce the work required to reach a shortlist worth investigating."
-              ]
-            },
-            {
-              "type": "media",
-              "media": "ai-results"
-            },
-            {
-              "type": "rail",
-              "title": "Inside the recommendation",
-              "media": [
-                "match-score",
-                "why-it-fits",
-                "sources",
-                "refine"
               ]
             }
           ]
@@ -531,55 +548,72 @@
           "id": "space-details",
           "nav": "Space Details",
           "label": "SPACE DETAILS",
-          "headline": "Making warehouse options easier to evaluate without relying on PDFs",
+          "headline": "Everything needed to evaluate a space in one place",
           "paragraphs": [
-            "Discovery was only useful if tenants could understand what they had found.",
-            "A promising warehouse still needed to be evaluated against operational requirements: size, location, availability, facilities, pricing, imagery, and other specifications.",
             "We therefore focused on bringing the information needed for early evaluation into a structured property experience rather than forcing users to move between listings, PDFs, and broker communication."
           ],
-          "blocks": [
-            {
-              "type": "media",
-              "media": "details"
+          "stickyDetails": {
+            "image": {
+              "src": "/work/speiz/space-details-full.png",
+              "alt": "Full Speiz Space Details page showing property imagery, specifications, facilities, location, viewing request and landlord contact.",
+              "width": 2880,
+              "height": 4410
             },
-            {
-              "type": "rail",
-              "title": "A closer look at the space",
-              "media": [
-                "specifications",
-                "imagery",
-                "availability",
-                "pricing",
-                "facilities"
-              ]
-            }
-          ]
+            "features": [
+              {
+                "title": "Full specifications",
+                "text": "Review size, facilities, loading access, ceiling height, property type, and other operational details."
+              },
+              {
+                "title": "Current property visuals",
+                "text": "See recent photos and understand the space before arranging a visit."
+              },
+              {
+                "title": "Availability & pricing",
+                "text": "Check availability, move-in timing, and expected pricing without additional back-and-forth."
+              },
+              {
+                "title": "Direct next steps",
+                "text": "Book a viewing or contact the landlord directly when a space looks relevant."
+              }
+            ]
+          }
         },
         {
-          "id": "decision-actions",
-          "nav": "Decision Actions",
-          "label": "DECISION ACTIONS",
-          "headline": "Turning browsing into an active decision process",
+          "id": "messages",
+          "nav": "Messages",
+          "label": "MESSAGES",
+          "headline": "Keeping the conversation inside the product",
           "paragraphs": [
-            "A marketplace can easily become an endless browsing experience.",
-            "We wanted each recommendation to help the tenant move closer to a decision.",
-            "Across the product, users could react to spaces rather than simply open and close listings. Curated recommendations could be accepted or rejected, while the broader experience supported lightweight interest and connection states.",
-            "These actions created clearer signals for both the tenant and the Speiz team, helping the product identify which options were worth pursuing and which should be removed from consideration."
+            "Once a tenant decided to move forward with a space, the journey continued inside Speiz. Messages kept the conversation with the landlord in the same product context instead of pushing users back into disconnected email threads."
           ],
           "blocks": [
             {
-              "type": "sequence",
-              "steps": [
-                "Suggested",
-                "Reviewed",
-                "Accepted / Rejected",
-                "Connect / Next action"
-              ],
-              "caption": "Examples of decision states across the product; not one combined flow."
-            },
-            {
-              "type": "media",
-              "media": "decisions"
+              "type": "sticky-features",
+              "image": {
+                "src": "/work/speiz/messages-full.png",
+                "alt": "Speiz Messages interface with conversation list, landlord chat, and details of the space being discussed.",
+                "width": 2880,
+                "height": 2048
+              },
+              "features": [
+                {
+                  "title": "Space context",
+                  "text": "Keep the conversation connected to the specific space being discussed."
+                },
+                {
+                  "title": "Direct communication",
+                  "text": "Message the landlord without leaving the product."
+                },
+                {
+                  "title": "Conversation history",
+                  "text": "Keep previous questions and responses in one place instead of scattered email threads."
+                },
+                {
+                  "title": "Next steps",
+                  "text": "Continue from interest to viewing, clarification, and follow-up without losing context."
+                }
+              ]
             }
           ]
         }
@@ -700,41 +734,82 @@
       "id": "impact",
       "nav": "Impact",
       "label": "IMPACT",
-      "headline": "What changed",
+      "headline": "From registration-first to value-first product experience",
       "paragraphs": [
-        "The tenant experience evolved from a conventional property-search model into a product with multiple layers of discovery and guidance.",
-        "Users could explore the market independently through Classic Search, receive human-curated options through Speiz Picks, or use AI Matches to turn a natural-language requirement into an explained shortlist.",
-        "Structured property information and explicit decision actions then helped users move from discovery toward evaluation and follow-up without relying on the disconnected workflows Speiz was created to replace.",
-        "All three discovery approaches described above were implemented as part of the product rather than remaining conceptual directions."
+        "Speiz evolved from a landing-page-led, registration-first journey into an open product experience where tenants could explore the market, evaluate spaces, and choose how to reach a shortlist before being asked to register at the moment of intent."
+      ],
+      "blocks": [
+        {
+          "type": "columns",
+          "style": "insight",
+          "items": [
+            {
+              "title": "Open access before registration",
+              "text": "Users could explore relevant spaces and see product value before being asked to create an account."
+            },
+            {
+              "title": "Broader market coverage in one place",
+              "text": "Connecting Speiz to a nationwide commercial real estate database gave tenants a broader view of the Norwegian market within a single product."
+            },
+            {
+              "title": "Decision-ready property information",
+              "text": "Availability, specifications, pricing, and current visuals were structured around what tenants needed to evaluate a space."
+            },
+            {
+              "title": "Faster path from search to viewing",
+              "text": "Search, availability checks, and viewing coordination moved into one flow, reducing weeks of back-and-forth across different channels."
+            },
+            {
+              "title": "Multiple paths to a shortlist",
+              "text": "Users could search independently, use AI-assisted matching, or rely on a shortlist curated by the Speiz team when they needed more guidance."
+            },
+            {
+              "title": "Connected follow-up",
+              "text": "Viewing requests and landlord conversations could continue inside Speiz instead of moving back into disconnected email threads."
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "learnings",
-      "nav": "Learnings",
-      "label": "LEARNINGS",
-      "headline": "Better search was not enough",
-      "paragraphs": [
-        "One of the biggest lessons from Speiz was that access to more listings does not automatically create a better decision experience.",
-        "The harder problem was creating confidence: Are these options relevant? Is the underlying information reliable? Why is this space being recommended? What should I do next?",
-        "As the product evolved, my own role evolved with it. Working across product requirements, design, stakeholders, and delivery pushed me to think less in terms of individual screens and more in terms of interconnected product systems.",
-        "If I continued evolving Speiz today, I would keep focusing on transparency — particularly around recommendation quality, data freshness, and making the reasoning behind suggested spaces even easier to understand."
+      "id": "beyond-tenant-experience",
+      "nav": "Beyond the tenant experience",
+      "hideFromTOC": true,
+      "label": "BEYOND THE TENANT EXPERIENCE",
+      "headline": "Designing for the wider product ecosystem",
+      "blocks": [
+        {
+          "type": "ecosystem",
+          "paragraphs": [
+            "This case study focuses on the tenant journey, but Speiz supported a broader product ecosystem. I also designed landlord-facing and internal admin experiences that supported day-to-day operations across the platform.",
+            "Designing across these different sides of the product required considering how actions and information in one interface affected the others."
+          ],
+          "items": [
+            {
+              "label": "INTERNAL ADMIN",
+              "caption": "User and property management, qualification, and operational workflows",
+              "image": {
+                "src": "/work/speiz/admin-interface.png",
+                "alt": "User and property management, qualification, and operational workflows",
+                "width": 2880,
+                "height": 2048
+              }
+            },
+            {
+              "label": "LANDLORD EXPERIENCE",
+              "caption": "Review tenant profiles, understand requirements, and manage introductions",
+              "image": {
+                "src": "/work/speiz/landlord-interface.png",
+                "alt": "Review tenant profiles, understand requirements, and manage introductions",
+                "width": 2880,
+                "height": 2048
+              }
+            }
+          ]
+        }
       ]
     }
   ],
-  "gallery": {
-    "type": "gallery",
-    "title": "Selected product work",
-    "text": "A closer look at the tenant experience across discovery, matching, evaluation, and decision-making.",
-    "media": [
-      "search",
-      "picks-overview",
-      "picks-results",
-      "ai-starter",
-      "ai-results",
-      "details",
-      "decisions"
-    ]
-  },
   "nextProject": {
     "title": "AI Video Research",
     "slug": "ai-video-research"

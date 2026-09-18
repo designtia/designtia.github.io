@@ -17,10 +17,21 @@ function Paragraphs({ paragraphs }: { paragraphs: string[] }) {
 }
 function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy }) {
   switch (block.type) {
+    case 'ecosystem': return <div className="editorial-ecosystem">
+      <div className="editorial-ecosystem-copy">{block.paragraphs.map(text => <Paragraphs key={text} paragraphs={[text]} />)}</div>
+      <div className="editorial-ecosystem-showcase">{block.items.map(item => <figure key={item.label}>
+        <img src={sitePath(item.image.src)} alt={item.image.alt} width={item.image.width} height={item.image.height} loading="lazy" />
+        <figcaption><p className="eyebrow">{item.label}</p><p>{item.caption}</p></figcaption>
+      </figure>)}</div>
+    </div>;
+    case 'sticky-features': return <div className="editorial-sticky-features">
+      <figure className="editorial-details-screen"><img src={sitePath(block.image.src)} alt={block.image.alt} width={block.image.width} height={block.image.height} loading="lazy" /></figure>
+      <div className="editorial-details-features">{block.features.map(feature => <div key={feature.title}><h4>{feature.title}</h4><p>{feature.text}</p></div>)}</div>
+    </div>;
     case 'focus-tabs': return <FocusTabs base={block.base} items={block.items} label={block.label} />;
     case 'before-after': return <BeforeAfterSequence states={block.states} />;
     case 'research-tabs': return <ResearchTabs items={block.items} />;
-    case 'text': return <div className="editorial-text-block">{block.headline && <h4>{block.headline}</h4>}<Paragraphs paragraphs={block.paragraphs} /></div>;
+    case 'text': return <div className="editorial-text-block">{block.eyebrow && <p className="eyebrow editorial-child-eyebrow">{block.eyebrow}</p>}{block.headline && <h4>{block.headline}</h4>}<Paragraphs paragraphs={block.paragraphs} /></div>;
     case 'titled-media': return <div className="editorial-process-block">
       <h3>{block.title}</h3>
       <Paragraphs paragraphs={[block.description]} />
@@ -39,7 +50,20 @@ function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy 
   }
 }
 function Section({ section, study, child = false }: { section: EditorialSection; study: EditorialStudy; child?: boolean }) {
-  return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${study.slug === 'speiz' && ['role-scope', 'problem', 'research-insights', 'design-process'].includes(section.id) ? 'speiz-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
+  if (section.stickyDetails) {
+    const { image, features } = section.stickyDetails;
+    return <section id={section.id} data-toc-section tabIndex={-1} className="editorial-section editorial-subsection editorial-sticky-details">
+      <div className="editorial-details-copy">
+        <SectionHeading label={section.label} headline={section.headline} child={child} />
+        {section.paragraphs && <Paragraphs paragraphs={section.paragraphs} />}
+        <div className="editorial-details-features">{features.map(feature => <div key={feature.title}>
+          <h4>{feature.title}</h4><p>{feature.text}</p>
+        </div>)}</div>
+      </div>
+      <figure className="editorial-details-screen"><img src={sitePath(image.src)} alt={image.alt} width={image.width} height={image.height} loading="lazy" /></figure>
+    </section>;
+  }
+  return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${study.slug === 'speiz' && ['role-scope', 'problem', 'research-insights', 'design-process', 'impact', 'beyond-tenant-experience'].includes(section.id) ? 'speiz-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
     <SectionHeading label={section.label} headline={section.headline} child={child} />
     {section.paragraphs && <Paragraphs paragraphs={section.paragraphs} />}
     {section.blocks && <div className="editorial-blocks">{section.blocks.map((block,i) => <Block block={block} study={study} key={i} />)}</div>}
@@ -68,7 +92,7 @@ export function CaseStudyLayout({ study }: { study: EditorialStudy }) {
         </section>
         {study.sections.map(section => <Section key={section.id} section={section} study={study} />)}
         {study.gallery && <ProjectGallery title={study.gallery.title} text={study.gallery.text} media={study.gallery.media.map(id => study.media[id])} />}
-        <nav className="editorial-next" aria-label="Project navigation"><a className="text-link" href={sitePath('/#work')}>Back to work <span aria-hidden="true">↗</span></a>
+        <nav className="editorial-next" aria-label="Project navigation"><a className="text-link" href={sitePath('/')}>Back to Home <span aria-hidden="true">↗</span></a>
           {study.nextProject && <a href={sitePath(`/work/${study.nextProject.slug}/`)}><span className="eyebrow">Next project</span><strong>{study.nextProject.title} <span aria-hidden="true">→</span></strong></a>}
         </nav>
       </div>

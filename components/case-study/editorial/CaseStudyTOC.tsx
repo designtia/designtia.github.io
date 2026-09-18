@@ -6,7 +6,7 @@ import type { EditorialSection } from '@/content/case-studies/editorial-types';
 
 type TOCItem = Pick<EditorialSection, 'id' | 'nav' | 'children'>;
 export function CaseStudyTOC({ sections }: { sections: EditorialSection[] }) {
-  const items: TOCItem[] = useMemo(() => [{ id: 'overview', nav: 'Overview' }, ...sections], [sections]);
+  const items: TOCItem[] = useMemo(() => [{ id: 'overview', nav: 'Overview' }, ...sections.filter(section => !section.hideFromTOC)], [sections]);
   const flat = useMemo(() => items.flatMap(item => [item, ...(item.children ?? [])]), [items]);
   const [active, setActive] = useState('overview');
 

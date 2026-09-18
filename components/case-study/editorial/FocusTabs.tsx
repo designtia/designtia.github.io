@@ -10,9 +10,9 @@ export function FocusTabs({ base, items, label = "Classic Search features" }: { 
   const backgrounds = [base, ...items.flatMap(item => item.base ? [item.base] : [])].filter((image, index, all) => all.findIndex(other => other.src === image.src) === index);
   const currentBase = items[active].base ?? base;
   return <div className="search-focus">
-    <div className="search-focus-media">
+    <div className={`search-focus-media ${items[active].fullScreen ? 'is-full-screen' : ''}`}>
       {backgrounds.map(image => <img key={image.src} className="search-focus-base" src={sitePath(image.src)} alt={image.alt} width={image.width} height={image.height} loading="lazy" aria-hidden={image.src !== currentBase.src} style={{ opacity: image.src === currentBase.src ? 1 : 0 }} />)}
-      {items.map((item, index) => <div key={item.title} role="tabpanel" id={`${id}-panel-${index}`} aria-labelledby={`${id}-tab-${index}`} aria-hidden={active !== index} className={`search-focus-layer focus-${item.position} ${active === index ? 'is-active' : ''}`}>
+      {items.map((item, index) => <div key={item.title} role="tabpanel" id={`${id}-panel-${index}`} aria-labelledby={`${id}-tab-${index}`} aria-hidden={active !== index} className={`search-focus-layer focus-${item.position} ${item.fullScreen ? 'focus-full-screen' : ''} ${active === index ? 'is-active' : ''}`}>
         <img src={sitePath(item.image.src)} alt={item.image.alt} width={item.image.width} height={item.image.height} loading="lazy" />
       </div>)}
     </div>

@@ -7,7 +7,7 @@ const ids = ['overview', ...sections.map(section => section.id)];
 assert.equal(new Set(ids).size, ids.length, 'Section anchors must be unique');
 assert.equal(study.sections.length, 7);
 assert.equal(study.sections.find(section => section.id === 'final-solution').children.length, 5);
-const references = [study.heroMedia, ...study.gallery.media];
+const references = [study.heroMedia, ...(study.gallery?.media ?? [])];
 for (const section of sections) {
   assert(section.nav && section.label);
   for (const block of section.blocks ?? []) {
