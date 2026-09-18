@@ -1,6 +1,7 @@
 export type Project = {
   id: string;
   name: string;
+  category?: string;
   headline: string;
   description: string;
   outcome?: string;
@@ -14,6 +15,7 @@ export type Project = {
     | "assessment"
     | "commerce";
   size: "lead" | "wide" | "narrow" | "compact";
+  comingSoon?: boolean;
   image?: string;
   href?: string;
 };
@@ -21,6 +23,8 @@ export const projects: Project[] = [
   {
     id: "01",
     name: "Whirlwind Steel Buildings",
+    category: "Industrial Building Platform",
+    comingSoon: true,
     headline: "Making complex building configuration easier to navigate",
     description:
       "Designing complex construction workflows, a Project Portal redesign, and an AI-ready design system.",
@@ -30,6 +34,8 @@ export const projects: Project[] = [
   {
     id: "02",
     name: "Kilo / Flox",
+    category: "Website Builder Platform",
+    comingSoon: true,
     headline: "Turning repeated implementation into a reusable builder",
     description:
       "A configurable system for creating branded pages, quizzes, templates, components, and promotions.",
@@ -40,6 +46,8 @@ export const projects: Project[] = [
   {
     id: "03",
     name: "Speiz",
+    category: "Commercial Real Estate Platform",
+    image: "/work/speiz/overview-hero.png",
     headline: "Simplifying warehouse search in a fragmented B2B market",
     description:
       "A commercial real estate platform bringing warehouse search, comparison, and tenant–landlord workflows into one product.",

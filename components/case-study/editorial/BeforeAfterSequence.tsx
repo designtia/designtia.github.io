@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, useRef, useState } from 'react';
+import { useCallback, useEffect, useId, useRef, useState } from 'react';
 import type { ComparisonState } from '@/content/case-studies/editorial-types';
 import { sitePath } from '@/lib/site-path';
 
@@ -28,13 +28,46 @@ export function BeforeAfterSequence({ states }: { states: ComparisonState[] }) {
 function Sequence({ state }: { state: ComparisonState }) {
   const rail = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
-  const go = (index: number) => {
+  const activeIndex = useRef(0);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const go = useCallback((requested: number) => {
+    const index = Math.max(0, Math.min(state.frames.length - 1, requested));
+    activeIndex.current = index;
     const container = rail.current;
     const frame = container?.children[index] as HTMLElement | undefined;
     if (container && frame) container.scrollTo({ left: frame.offsetLeft - (container.children[0] as HTMLElement).offsetLeft, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-  };
+  }, [state.frames.length]);
+  useEffect(() => {
+    const container = rail.current;
+    if (!container) return;
+    let lastWheel = -Infinity;
+    let lockedUntil = 0;
+    const onWheel = (event: WheelEvent) => {
+      const delta = event.shiftKey && !event.deltaX ? event.deltaY : event.deltaX;
+      if (!delta || (!event.shiftKey && Math.abs(delta) <= Math.abs(event.deltaY))) return;
+      event.preventDefault();
+      const now = performance.now();
+      const freshGesture = now - lastWheel > 180;
+      lastWheel = now;
+      if (!freshGesture || now < lockedUntil) return;
+      lockedUntil = now + 500;
+      go(activeIndex.current + Math.sign(delta));
+    };
+    container.addEventListener('wheel', onWheel, { passive: false });
+    return () => container.removeEventListener('wheel', onWheel);
+  }, [go]);
   return <div className="comparison-canvas">
     <div className="comparison-rail" ref={rail} tabIndex={0} aria-label={`${state.label} screenshots. Scroll horizontally to explore.`}
+      onTouchStart={event => { const touch = event.touches[0]; touchStart.current = { x: touch.clientX, y: touch.clientY }; }}
+      onTouchEnd={event => {
+        const start = touchStart.current;
+        touchStart.current = null;
+        if (!start) return;
+        const touch = event.changedTouches[0];
+        const dx = start.x - touch.clientX;
+        if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(start.y - touch.clientY)) go(activeIndex.current + Math.sign(dx));
+      }}
+      onTouchCancel={() => { touchStart.current = null; }}
       onScroll={() => {
         const container = rail.current;
         if (!container) return;

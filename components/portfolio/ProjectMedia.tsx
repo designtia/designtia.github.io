@@ -321,20 +321,18 @@ export function ProjectMedia({ project }: { project: Project }) {
   const Preview = previews[project.media];
   return (
     <div
-      className={`project-media media-${project.media}`}
+      className={`project-media media-${project.media}${project.comingSoon ? " is-coming-soon" : ""}`}
       role="img"
-      aria-label={`${project.name}: illustrative interface placeholder, not final project imagery`}
+      aria-label={`${project.name}${project.image ? ": project screenshot" : project.comingSoon ? ": preview unavailable" : ": illustrative preview"}${project.comingSoon ? " — Coming Soon" : ""}`}
     >
-      {project.image ? (
+      {project.comingSoon ? null : project.image ? (
         <img src={sitePath(project.image)} alt="" className="replacement-image" />
       ) : (
         <div className="media-art" aria-hidden="true">
           <Preview />
         </div>
       )}
-      <span className="media-corner" aria-hidden="true">
-        ↗
-      </span>
+      {project.comingSoon && <span className="coming-soon-overlay">Coming Soon</span>}
     </div>
   );
 }

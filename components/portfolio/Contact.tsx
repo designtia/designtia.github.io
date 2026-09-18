@@ -1,4 +1,5 @@
 "use client";
+import { sitePath } from "@/lib/site-path";
 import { useState } from "react";
 import { contact } from "@/lib/projects";
 export function Contact() {
@@ -10,7 +11,7 @@ export function Contact() {
         <h2>
           Let’s work
           <br />
-          together<span className="name-dot">↗</span>
+          together<img className="homepage-arrow" src={sitePath("/icons/arrow-right-up.svg")} width={16} height={16} alt="" />
         </h2>
         <div className="contact-aside">
           <p>
@@ -27,7 +28,7 @@ export function Contact() {
                   : contact.linkedin;
               return href ? (
                 <a className="text-link" key={label} href={href}>
-                  {label} <span>↗</span>
+                  {label} <img className="homepage-arrow" src={sitePath("/icons/arrow-right-up.svg")} width={16} height={16} alt="" />
                 </a>
               ) : (
                 <button
@@ -35,7 +36,7 @@ export function Contact() {
                   className="text-link"
                   onClick={() => setNotice(`${label} details will be added soon.`)}
                 >
-                  {label} <span aria-hidden="true">↗</span>
+                  {label} <img className="homepage-arrow" src={sitePath("/icons/arrow-right-up.svg")} width={16} height={16} alt="" />
                 </button>
               );
             })}

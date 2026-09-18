@@ -1,9 +1,9 @@
 import type { EditorialMedia, EditorialStudy, EditorialBlock } from '@/content/case-studies/editorial-types';
 import { MediaPlaceholder } from './MediaPlaceholder';
 
-export function SectionHeading({ label, headline, child = false }: { label: string; headline?: string; child?: boolean }) {
+export function SectionHeading({ label, headline, child = false, hideLabel = false }: { label: string; headline?: string; child?: boolean; hideLabel?: boolean }) {
   const Heading = child ? 'h3' : 'h2';
-  return <header className="editorial-section-heading">{headline ? <><p className="eyebrow">{label}</p><Heading>{headline}</Heading></> : <Heading className="eyebrow">{label}</Heading>}</header>;
+  return <header className="editorial-section-heading">{headline ? <>{!hideLabel && <p className="eyebrow">{label}</p>}<Heading>{headline}</Heading></> : <Heading className="eyebrow">{label}</Heading>}</header>;
 }
 export function CaseStudyMetadata({ items }: { items: EditorialStudy['metadata'] }) {
   return <dl className="editorial-metadata">{items.map(item => <div key={item.label}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}</dl>;

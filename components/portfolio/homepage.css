@@ -1,0 +1,48 @@
+@import './design-tokens.css';
+.homepage .site-header { background: var(--bg-default); border: 0; box-shadow: none; backdrop-filter: none; }
+.homepage .header-inner { height: 80px; max-width: 1200px; width: calc(100% - 2 * var(--gutter)); padding: 0; margin-inline: auto; }
+.homepage .wordmark { font: var(--type-h4); letter-spacing: 0; color: var(--text-primary); }
+.homepage .site-header nav a { font: var(--type-label-m); color: var(--text-secondary); display: inline-flex; align-items: center; gap: 4px; }
+.homepage .hero h1 { font: 600 clamp(36px, 4.1vw, 64px)/1.125 var(--font-geist), sans-serif; letter-spacing: -.3px; color: var(--text-primary); }
+.homepage .eyebrow { font: var(--type-overline); letter-spacing: .08em; color: var(--accent-default); }
+.homepage :is(.hero-aside p,.project-description,.about-text,.contact-aside p,.footer) { font: var(--type-body-s); color: var(--text-secondary); }
+.homepage :is(.project h2,.about h2,.contact h2) { font: var(--type-h2); letter-spacing: 0; color: var(--text-primary); }
+.homepage :is(.project-label,.text-link) { font: var(--type-label-m); letter-spacing: 0; color: var(--text-secondary); }
+.homepage .text-link { display: inline-flex; align-items: center; gap: 6px; }
+.homepage .project-media { aspect-ratio: 16 / 10; height: auto; background: var(--bg-subtle); }
+.homepage .project-media .replacement-image { width: 100%; height: 100%; object-fit: contain; padding: 16px; }
+.homepage .coming-soon-overlay { position: absolute; inset: 0; display: grid; place-items: center; background: rgb(242 244 247 / 35%); color: var(--text-secondary); font: var(--type-label-m); z-index: 2; }
+.homepage .coming-soon-cta { color: var(--text-tertiary); }
+.homepage-arrow,.homepage .navigation-arrow { display: inline-block; vertical-align: middle; flex-shrink: 0; }
+.homepage .arrow-down { transform: rotate(90deg); }
+.homepage img.media-corner { width: 16px; height: 16px; }
+@media (max-width: 700px) {
+  .homepage .hero h1 { font: var(--type-h1); letter-spacing: -.2px; }
+}
+
+/* A single usable 1200px grid for every homepage section. */
+.homepage .shell { width: calc(100% - 2 * var(--gutter)); max-width: 1200px; margin-inline: auto; padding-inline: 0; }
+.homepage .project-media,
+.homepage .project-media .replacement-image { border-radius: 12px; border: 0; }
+
+/* Matching editorial stacks for the two closing sections. */
+.homepage :is(.about,.contact) { display: block; padding-top: 100px; padding-bottom: 0; }
+.homepage :is(.about,.contact) > .eyebrow { padding: 0; margin: 0 0 8px; }
+.homepage :is(.about h2,.contact h2) { max-width: 600px; margin: 0 0 16px; }
+.homepage :is(.about-text,.contact-aside) { max-width: 600px; margin: 0; }
+.homepage .contact-layout { display: block; margin: 0; }
+.homepage .contact-aside > p:first-child { margin: 0 0 24px; }
+.homepage .contact-links { gap: 24px; flex-wrap: wrap; }
+.homepage .contact-links .text-link { gap: 6px; }
+.homepage .contact-notice:empty { display: none; }
+.homepage .contact { padding-bottom: 80px; }
+@media (max-width: 700px) {
+  .homepage :is(.about,.contact) { padding-top: 64px; }
+  .homepage .contact { padding-bottom: 64px; }
+}
+
+/* Project-card refinement, without changing shared page typography. */
+.homepage .project-label { font: var(--type-overline); letter-spacing: .08em; color: var(--text-tertiary); }
+.homepage .project h2 { font: var(--type-h4); letter-spacing: 0; }
+.homepage .project-media:not(.is-coming-soon) { background: transparent; }
+.homepage .project-media .replacement-image { display: block; padding: 0; object-fit: cover; border-radius: 12px; border: 0; }

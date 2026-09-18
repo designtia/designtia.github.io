@@ -11,6 +11,10 @@ import { FocusTabs } from './FocusTabs';
 import { ResearchTabs } from './ResearchTabs';
 import { MediaReveal } from './MediaReveal';
 import './editorial.css';
+import './editorial-theme.css';
+import localFont from 'next/font/local';
+
+const geist = localFont({ src: './fonts/geist-latin.woff2', weight: '100 900', display: 'swap', variable: '--font-geist' });
 
 function Paragraphs({ paragraphs }: { paragraphs: string[] }) {
   return <div className="editorial-prose">{paragraphs.map((text,i) => <p key={i}>{text}</p>)}</div>;
@@ -54,7 +58,7 @@ function Section({ section, study, child = false }: { section: EditorialSection;
     const { image, features } = section.stickyDetails;
     return <section id={section.id} data-toc-section tabIndex={-1} className="editorial-section editorial-subsection editorial-sticky-details">
       <div className="editorial-details-copy">
-        <SectionHeading label={section.label} headline={section.headline} child={child} />
+        <SectionHeading label={section.label} headline={section.headline} child={child} hideLabel={section.id === "search-discovery"} />
         {section.paragraphs && <Paragraphs paragraphs={section.paragraphs} />}
         <div className="editorial-details-features">{features.map(feature => <div key={feature.title}>
           <h4>{feature.title}</h4><p>{feature.text}</p>
@@ -64,14 +68,14 @@ function Section({ section, study, child = false }: { section: EditorialSection;
     </section>;
   }
   return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${study.slug === 'speiz' && ['role-scope', 'problem', 'research-insights', 'design-process', 'impact', 'beyond-tenant-experience'].includes(section.id) ? 'speiz-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
-    <SectionHeading label={section.label} headline={section.headline} child={child} />
+    <SectionHeading label={section.label} headline={section.headline} child={child} hideLabel={section.id === "search-discovery"} />
     {section.paragraphs && <Paragraphs paragraphs={section.paragraphs} />}
     {section.blocks && <div className="editorial-blocks">{section.blocks.map((block,i) => <Block block={block} study={study} key={i} />)}</div>}
     {section.children?.map(subsection => <Section key={subsection.id} section={subsection} study={study} child />)}
   </section>;
 }
 export function CaseStudyLayout({ study }: { study: EditorialStudy }) {
-  return <><a className="skip-link" href="#overview">Skip to case study</a><div id="top" /><Header home={false} />
+  return <div className={`editorial-page ${geist.variable}`}><a className="skip-link" href="#overview">Skip to case study</a><div id="top" /><Header home={false} caseStudy />
     <main>
       <CaseStudyHero study={study} />
     <div className="editorial-case shell" data-project={study.slug}><CaseStudyTOC sections={study.sections} />
@@ -92,9 +96,9 @@ export function CaseStudyLayout({ study }: { study: EditorialStudy }) {
         </section>
         {study.sections.map(section => <Section key={section.id} section={section} study={study} />)}
         {study.gallery && <ProjectGallery title={study.gallery.title} text={study.gallery.text} media={study.gallery.media.map(id => study.media[id])} />}
-        <nav className="editorial-next" aria-label="Project navigation"><a className="text-link" href={sitePath('/')}>Back to Home <span aria-hidden="true">↗</span></a>
-          {study.nextProject && <a href={sitePath(`/work/${study.nextProject.slug}/`)}><span className="eyebrow">Next project</span><strong>{study.nextProject.title} <span aria-hidden="true">→</span></strong></a>}
+        <nav className="editorial-next" aria-label="Project navigation"><a className="text-link" href={sitePath('/')}><img className="navigation-arrow" src={sitePath("/icons/arrow-left.svg")} width={16} height={16} alt="" /> Back to Home</a>
+          {study.nextProject && <a href={sitePath(`/work/${study.nextProject.slug}/`)}><span className="eyebrow">Next project</span><strong>{study.nextProject.title} <img className="navigation-arrow" src={sitePath("/icons/arrow-right.svg")} width={24} height={24} alt="" /></strong></a>}
         </nav>
       </div>
-    </div></main><Footer /><MediaReveal /></>;
+    </div></main><Footer /><MediaReveal /></div>;
 }

@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export function Hero() {
   return (
     <section className="hero shell" aria-labelledby="hero-title">
@@ -9,7 +10,7 @@ export function Hero() {
           AI-enabled design and development.
         </p>
         <a className="text-link" href="#work">
-          View work <span aria-hidden="true">↓</span>
+          View work <img className="homepage-arrow arrow-down" src={sitePath("/icons/arrow-right.svg")} width={24} height={24} alt="" />
         </a>
       </div>
     </section>
