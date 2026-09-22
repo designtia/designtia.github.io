@@ -14,12 +14,12 @@ export type EditorialBlock =
   | { type: "sticky-features"; image: NonNullable<EditorialMedia["image"]>; features: { title: string; text: string }[] }
   | { type: "focus-tabs"; label?: string; base: NonNullable<EditorialMedia["image"]>; items: FocusItem[] }
   | { type: "before-after"; states: ComparisonState[] }
-  | { type: "research-tabs"; items: ResearchItem[] }
+  | { type: "research-tabs"; label?: string; items: ResearchItem[] }
   | { type: 'text'; paragraphs: string[]; headline?: string; eyebrow?: string }
   | { type: 'media'; media: string }
   | { type: 'titled-media'; title: string; description: string; media: string }
   | { type: 'annotated'; media: string; annotations: { title: string; text: string }[] }
-  | { type: 'columns'; items: { title: string; text?: string; lines?: string[] }[]; style?: 'responsibility' | 'problem' | 'insight' | 'discovery' }
+  | { type: 'columns'; columns?: 2; items: { title: string; text?: string; lines?: string[] }[]; style?: 'responsibility' | 'problem' | 'insight' | 'discovery' }
   | { type: 'sequence'; steps: string[]; caption?: string }
   | { type: 'process'; stages: { title: string; media: string }[]; change: string }
   | { type: 'rail'; title: string; media: string[] }

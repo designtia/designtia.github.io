@@ -9,9 +9,9 @@ export function Contact() {
       <p className="eyebrow">Contact</p>
       <div className="contact-layout">
         <h2>
-          Let’s work
+          Have a product in mind?
           <br />
-          together<img className="homepage-arrow" src={sitePath("/icons/arrow-right-up.svg")} width={16} height={16} alt="" />
+          <span>Let’s talk.</span>
         </h2>
         <div className="contact-aside">
           <p>
@@ -27,16 +27,16 @@ export function Contact() {
                     : ""
                   : contact.linkedin;
               return href ? (
-                <a className="text-link" key={label} href={href}>
-                  {label} <img className="homepage-arrow" src={sitePath("/icons/arrow-right-up.svg")} width={16} height={16} alt="" />
+                <a className={`text-link contact-button ${label === "Email" ? "contact-button-primary" : ""}`} key={label} href={href}>
+                  {label === "Email" ? "Say hello" : label} <img className="homepage-arrow" src={sitePath("/icons/arrow-right-up.svg")} width={16} height={16} alt="" />
                 </a>
               ) : (
                 <button
                   key={label}
-                  className="text-link"
+                  className={`text-link contact-button ${label === "Email" ? "contact-button-primary" : ""}`}
                   onClick={() => setNotice(`${label} details will be added soon.`)}
                 >
-                  {label} <img className="homepage-arrow" src={sitePath("/icons/arrow-right-up.svg")} width={16} height={16} alt="" />
+                  {label === "Email" ? "Say hello" : label} <img className="homepage-arrow" src={sitePath("/icons/arrow-right-up.svg")} width={16} height={16} alt="" />
                 </button>
               );
             })}

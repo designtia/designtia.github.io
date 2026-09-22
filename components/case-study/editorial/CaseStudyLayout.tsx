@@ -34,7 +34,7 @@ function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy 
     </div>;
     case 'focus-tabs': return <FocusTabs base={block.base} items={block.items} label={block.label} />;
     case 'before-after': return <BeforeAfterSequence states={block.states} />;
-    case 'research-tabs': return <ResearchTabs items={block.items} />;
+    case 'research-tabs': return <ResearchTabs items={block.items} label={block.label} />;
     case 'text': return <div className="editorial-text-block">{block.eyebrow && <p className="eyebrow editorial-child-eyebrow">{block.eyebrow}</p>}{block.headline && <h4>{block.headline}</h4>}<Paragraphs paragraphs={block.paragraphs} /></div>;
     case 'titled-media': return <div className="editorial-process-block">
       <h3>{block.title}</h3>
@@ -43,7 +43,7 @@ function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy 
     </div>;
     case 'media': return <MediaPlaceholder media={study.media[block.media]} />;
     case 'annotated': return <AnnotatedMedia media={study.media[block.media]} annotations={block.annotations} />;
-    case 'columns': return <div className={`editorial-columns columns-${block.style ?? 'insight'}`}>{block.items.map((item,i) => <div key={item.title}>
+    case 'columns': return <div className={`editorial-columns columns-${block.style ?? 'insight'}${block.columns ? ` columns-count-${block.columns}` : ''}`}>{block.items.map((item,i) => <div key={item.title}>
       {block.style === 'problem' && <span className="problem-index" aria-hidden="true">{String(i+1).padStart(2,'0')} <span>↘</span></span>}
       <h4>{block.style === 'discovery' && <span className="discovery-number">{String(i+1).padStart(2,'0')}</span>}{item.title}</h4>{item.text && <p>{item.text}</p>}{item.lines && <ul>{item.lines.map(line => <li key={line}>{line}</li>)}</ul>}
     </div>)}</div>;
@@ -67,7 +67,7 @@ function Section({ section, study, child = false }: { section: EditorialSection;
       <figure className="editorial-details-screen"><img src={sitePath(image.src)} alt={image.alt} width={image.width} height={image.height} loading="lazy" /></figure>
     </section>;
   }
-  return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${study.slug === 'speiz' && ['role-scope', 'problem', 'research-insights', 'design-process', 'impact', 'beyond-tenant-experience'].includes(section.id) ? 'speiz-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
+  return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${['speiz', 'website-builder'].includes(study.slug) && ['role-scope', 'problem', 'research-insights', 'system-strategy', 'design-process', 'impact', 'beyond-tenant-experience'].includes(section.id) ? 'editorial-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
     <SectionHeading label={section.label} headline={section.headline} child={child} hideLabel={section.id === "search-discovery"} />
     {section.paragraphs && <Paragraphs paragraphs={section.paragraphs} />}
     {section.blocks && <div className="editorial-blocks">{section.blocks.map((block,i) => <Block block={block} study={study} key={i} />)}</div>}
@@ -80,7 +80,7 @@ export function CaseStudyLayout({ study }: { study: EditorialStudy }) {
       <CaseStudyHero study={study} />
     <div className="editorial-case shell" data-project={study.slug}><CaseStudyTOC sections={study.sections} />
       <div className="editorial-main">
-        <section id="overview" data-toc-section tabIndex={-1} className={`editorial-overview ${study.slug === 'speiz' ? 'speiz-reference-section' : ''}`}>
+        <section id="overview" data-toc-section tabIndex={-1} className={`editorial-overview ${['speiz', 'website-builder'].includes(study.slug) ? 'editorial-reference-section' : ''}`}>
           {study.overview ? <>
             <SectionHeading label="OVERVIEW" headline={study.overview.headline} />
             <div className="editorial-overview-summary">

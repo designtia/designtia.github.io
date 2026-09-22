@@ -325,9 +325,9 @@ export function ProjectMedia({ project }: { project: Project }) {
       role="img"
       aria-label={`${project.name}${project.image ? ": project screenshot" : project.comingSoon ? ": preview unavailable" : ": illustrative preview"}${project.comingSoon ? " — Coming Soon" : ""}`}
     >
-      {project.comingSoon ? null : project.image ? (
+      {project.image ? (
         <img src={sitePath(project.image)} alt="" className="replacement-image" />
-      ) : (
+      ) : project.comingSoon ? null : (
         <div className="media-art" aria-hidden="true">
           <Preview />
         </div>

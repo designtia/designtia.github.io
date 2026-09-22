@@ -11,7 +11,7 @@ export function CaseStudyMetadata({ items }: { items: EditorialStudy['metadata']
 export function CaseStudyHero({ study }: { study: EditorialStudy }) {
   return <section className="editorial-hero shell" data-project={study.slug}>
     <p className="eyebrow">{study.eyebrow}</p><h1>{study.headline}</h1>
-    <CaseStudyMetadata items={study.metadata} /><MediaPlaceholder media={study.media[study.heroMedia]} showCaption={study.slug !== 'speiz'} />
+    <CaseStudyMetadata items={study.metadata} /><MediaPlaceholder media={study.media[study.heroMedia]} showCaption={!['speiz', 'website-builder'].includes(study.slug)} />
   </section>;
 }
 export function AnnotatedMedia({ media, annotations }: { media: EditorialMedia; annotations: { title: string; text: string }[] }) {

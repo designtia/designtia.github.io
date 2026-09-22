@@ -33,10 +33,11 @@ export const projects: Project[] = [
   },
   {
     id: "02",
-    name: "Kilo / Flox",
-    category: "Website Builder Platform",
+    name: "Self-service Website & Sales Flow Builder",
+    category: "SELF-SERVICE WEBSITE & SALES FLOW BUILDER",
+    image: "/work/website-builder/hero.png",
     comingSoon: true,
-    headline: "Turning repeated implementation into a reusable builder",
+    headline: "Replacing weeks of custom development with the tools to build and launch on their own",
     description:
       "A configurable system for creating branded pages, quizzes, templates, components, and promotions.",
     outcome: "Page implementation: weeks → days",

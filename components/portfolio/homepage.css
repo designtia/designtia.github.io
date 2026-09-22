@@ -46,3 +46,37 @@
 .homepage .project h2 { font: var(--type-h4); letter-spacing: 0; }
 .homepage .project-media:not(.is-coming-soon) { background: transparent; }
 .homepage .project-media .replacement-image { display: block; padding: 0; object-fit: cover; border-radius: 12px; border: 0; }
+
+/* A spacious editorial close, inspired by the contact references. */
+.homepage .about { display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; row-gap: 16px; padding-block: 100px; }
+.homepage .about > .eyebrow { grid-column: 1 / -1; margin: 0; color: var(--text-tertiary); }
+.homepage .about h2 { grid-column: 1; margin: 0; }
+.homepage .about-text { grid-column: 2; align-self: start; margin: 0; }
+.homepage .contact { border-top: 1px solid var(--border-subtle); padding-top: 56px; padding-bottom: 100px; }
+.homepage .contact > .eyebrow { color: var(--text-tertiary); margin-bottom: 32px; }
+.homepage .contact h2 { max-width: 1000px; font: 600 clamp(40px, 5.5vw, 72px)/1.08 var(--font-geist), sans-serif; letter-spacing: -.035em; margin: 0 0 28px; }
+.homepage .contact h2 > span { color: var(--text-secondary); }
+.homepage .contact-aside { max-width: 520px; }
+.homepage .contact-aside > p:first-child { font: var(--type-body-m); margin-bottom: 32px; }
+.homepage .contact-links { gap: 12px; }
+.homepage .contact-links .contact-button { min-height: 48px; padding: 14px 24px; border: 1px solid var(--border-subtle); border-radius: 999px; background: var(--bg-default); color: var(--text-secondary); gap: 10px; transition: background .2s, transform .2s; }
+.homepage .contact-links .contact-button-primary { background: var(--text-primary); color: var(--bg-default); border-color: var(--text-primary); }
+.homepage .contact-button-primary img { filter: brightness(0) invert(1); }
+.homepage .contact-links .contact-button:hover { transform: translateY(-2px); background: var(--bg-subtle); }
+.homepage .contact-links .contact-button-primary:hover { background: var(--text-secondary); }
+.homepage .footer { padding-top: 24px; padding-bottom: 32px; color: var(--text-tertiary); border-top: 1px solid var(--border-subtle); gap: 24px; }
+.homepage .footer > span:nth-child(2) { margin-left: auto; color: var(--text-tertiary); }
+.homepage .footer > a { margin-left: 0; }
+@media (max-width: 700px) {
+  .homepage .about { grid-template-columns: 1fr; gap: 16px; padding-block: 64px; }
+  .homepage .about h2,.homepage .about-text { grid-column: 1; }
+  .homepage .contact { padding-block: 40px 64px; }
+  .homepage .contact > .eyebrow { margin-bottom: 24px; }
+  .homepage .footer { flex-wrap: wrap; gap: 12px 24px; }
+  .homepage .footer > span:nth-child(2) { margin-left: 0; }
+  .homepage .footer > a { margin-left: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .homepage .contact-links .contact-button { transition: none; }
+  .homepage .contact-links .contact-button:hover { transform: none; }
+}

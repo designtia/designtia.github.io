@@ -4,12 +4,12 @@ import { useId, useRef, useState } from 'react';
 import type { ResearchItem } from '@/content/case-studies/editorial-types';
 import { sitePath } from '@/lib/site-path';
 
-export function ResearchTabs({ items }: { items: ResearchItem[] }) {
+export function ResearchTabs({ items, label = "Research perspectives" }: { items: ResearchItem[]; label?: string }) {
   const [active, setActive] = useState(0);
   const id = useId();
   const buttons = useRef<(HTMLButtonElement | null)[]>([]);
   return <div className="research-tabs">
-    <div role="tablist" aria-label="Research perspectives" aria-orientation="vertical" className="research-tab-list">
+    <div role="tablist" aria-label={label} aria-orientation="vertical" className="research-tab-list">
       {items.map((item, index) => <button
         key={item.id}
         ref={node => { buttons.current[index] = node; }}

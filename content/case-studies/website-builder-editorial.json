@@ -1,0 +1,179 @@
+{
+  "slug": "website-builder",
+  "title": "Self-service Website & Sales Flow Builder",
+  "eyebrow": "SELF-SERVICE WEBSITE & SALES FLOW BUILDER",
+  "headline": "Replacing weeks of custom development with the tools to build and launch on their own",
+  "overview": {
+    "headline": "Moving repeated website and funnel work into a shared self-service builder",
+    "labels": [
+      "PRODUCT",
+      "CHALLENGE"
+    ]
+  },
+  "intro": [
+    "A self-service builder for partner brands to create landing pages, quizzes, promotions, and sales flows from reusable components styled with their own branding.",
+    "Brands shared similar sales journeys but differed in identity, content, and experiments. Supporting those variations through custom development made launches slow and hard to scale."
+  ],
+  "metadata": [
+    {
+      "label": "ROLE",
+      "value": "Product Designer"
+    },
+    {
+      "label": "PRODUCT",
+      "value": "Self-service builder"
+    },
+    {
+      "label": "SCOPE",
+      "value": "UX/UI · Feature definition · Builder workflows"
+    }
+  ],
+  "heroMedia": "hero",
+  "media": {
+    "hero": {
+      "title": "Website builder interface",
+      "variant": "hero",
+      "image": {
+        "src": "/work/website-builder/hero.png",
+        "alt": "Website builder with reusable components, a page preview, and configuration settings.",
+        "width": 2400,
+        "height": 1707
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "role-scope",
+      "nav": "Role & Scope",
+      "label": "ROLE & SCOPE",
+      "headline": "Designing both the builder and the system behind it",
+      "paragraphs": [
+        "I designed the core experience across page building, quizzes, templates, branding, promotions, and reusable components. My work included defining feature behavior, structuring configuration flows, and turning complex editing needs into consistent UX patterns."
+      ],
+      "blocks": [
+        {
+          "type": "columns",
+          "style": "responsibility",
+          "items": [
+            {
+              "title": "UX/UI",
+              "lines": [
+                "Builder interface",
+                "Editing patterns",
+                "Responsive states"
+              ]
+            },
+            {
+              "title": "FEATURE DEFINITION",
+              "lines": [
+                "Requirements",
+                "Component behavior",
+                "Configuration rules"
+              ]
+            },
+            {
+              "title": "BUILDER WORKFLOWS",
+              "lines": [
+                "Page creation",
+                "Quiz creation",
+                "Content editing"
+              ]
+            },
+            {
+              "title": "REUSABLE COMPONENTS",
+              "lines": [
+                "Layout primitives",
+                "Content components",
+                "Advanced modules"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "problem",
+      "nav": "Problem",
+      "label": "PROBLEM",
+      "headline": "Similar sales journeys were rebuilt for every brand",
+      "paragraphs": [
+        "Partner brands often followed the same core sales pattern: attract customers, understand their needs through a quiz, recommend a relevant product, and move them toward purchase. But each brand wanted its own identity, content, offers, and experiments. Supporting those variations through custom development meant even relatively small changes could take weeks to launch."
+      ],
+      "blocks": [
+        {
+          "type": "columns",
+          "style": "problem",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Shared sales journey",
+              "text": "Landing pages, quizzes, recommendations, and purchase flows followed a similar core structure, but were still rebuilt or adapted for each brand."
+            },
+            {
+              "title": "Brand-specific variations",
+              "text": "Each company needed its own visual style, messaging, imagery, and tone. Teams also wanted to adapt content, page structure, offers, and sales flows to fit their own approach."
+            },
+            {
+              "title": "Developer dependency",
+              "text": "Changes and experiments often required engineering work instead of simple configuration."
+            },
+            {
+              "title": "Weeks to launch",
+              "text": "Even relatively small experiments could take weeks to implement and release."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "system-strategy",
+      "nav": "System Strategy",
+      "label": "SYSTEM STRATEGY",
+      "headline": "Standardizing the shared flow while keeping each brand flexible",
+      "paragraphs": [
+        "The goal was not to make every brand use the same website. We identified the parts of the sales journey that repeated across companies, turned them into reusable building blocks, and kept the content, branding, and configuration flexible enough for each team to adapt."
+      ],
+      "blocks": [
+        {
+          "type": "research-tabs",
+          "label": "System strategy",
+          "items": [
+            {
+              "id": "shared-sales",
+              "title": "Shared sales structure",
+              "description": "Reuse common patterns across landing pages, quizzes, product recommendations, and purchase flows.",
+              "image": {
+                "src": "/work/website-builder/templates.png",
+                "alt": "Reusable landing page templates and sales flow patterns.",
+                "width": 2880,
+                "height": 2048
+              }
+            },
+            {
+              "id": "brand-styling",
+              "title": "Brand-level styling",
+              "description": "Define logos, typography, and colors once so new pages and components automatically follow the brand’s visual identity.",
+              "image": {
+                "src": "/work/website-builder/branding.png",
+                "alt": "Brand configuration for logos, typography, and colors with a live preview.",
+                "width": 2880,
+                "height": 2048
+              }
+            },
+            {
+              "id": "building-blocks",
+              "title": "Configurable building blocks",
+              "description": "Let teams adapt content, layout, settings, and component behavior without rebuilding the experience from scratch.",
+              "image": {
+                "src": "/work/website-builder/components.png",
+                "alt": "Builder components and configurable product list settings.",
+                "width": 2880,
+                "height": 2048
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
