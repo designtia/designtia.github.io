@@ -111,3 +111,75 @@
 .editorial-page .comparison-controls button[aria-current="step"] { width: 20px; }
 .editorial-page .editorial-hero > .editorial-media,
 .editorial-page .editorial-hero > .editorial-media > img { border: 0; outline: 0; }
+
+/* Keep the overlay coordinate system intact inside a shared, contained desktop stage. */
+.search-focus-stage { display: contents; }
+@media (min-width: 901px) {
+  .editorial-case[data-project="speiz"] {
+    --interactive-media-height: min(clamp(240px, 58vh, 640px), calc(100vh - 260px));
+  }
+  .editorial-case[data-project="speiz"] :is(.search-focus-media, .comparison-rail, .research-panels) {
+    height: var(--interactive-media-height);
+    aspect-ratio: auto;
+  }
+  .editorial-case[data-project="speiz"] .search-focus-media {
+    display: grid;
+    place-items: center;
+  }
+  .editorial-case[data-project="speiz"] .search-focus-stage {
+    display: block;
+    position: relative;
+    width: min(100%, calc(var(--interactive-media-height) * 1.37));
+    aspect-ratio: 1.37;
+  }
+  .editorial-case[data-project="speiz"] .search-focus-base { object-fit: contain; }
+  .editorial-case[data-project="speiz"] .comparison-frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .editorial-case[data-project="speiz"] .comparison-frame img {
+    flex: 1;
+    min-height: 0;
+    height: 0;
+    width: 100%;
+    object-fit: contain;
+  }
+  .editorial-case[data-project="speiz"] .research-panels [role="tabpanel"] {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+}
+
+/* Shared Final Solution navigation and compact peek carousel. */
+.editorial-page .search-focus .research-tab-title { font: var(--type-label-m); }
+.editorial-page .search-focus .research-tab-list button { background: transparent; border: 0; cursor: pointer; }
+.editorial-page .search-focus .research-tab-list button:focus-visible { outline: 2px solid var(--accent-default); outline-offset: 3px; }
+.editorial-page .search-focus .research-tab-list button[aria-selected="true"]::before { background: var(--accent-default); }
+.editorial-case[data-project="speiz"] .comparison-frame { flex-basis: 86%; overflow: visible; }
+.editorial-case[data-project="speiz"] .comparison-rail { gap: 16px; padding: 16px; scroll-padding-inline: 16px; overflow-y: hidden; }
+.editorial-case[data-project="speiz"] .comparison-rail::after { display: block; content: ''; flex: 0 0 calc(14% - 16px); }
+@media (min-width: 901px) {
+  .editorial-case[data-project="speiz"] .search-focus { grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); }
+  .editorial-case[data-project="speiz"] .search-focus-media { height: min(64vh, 680px); }
+  .editorial-case[data-project="speiz"] .search-focus-stage { width: min(100%, calc(min(64vh, 680px) * 1.37)); }
+}
+
+/* Speiz side-navigation spacing and full-width comparison. */
+.editorial-case[data-project="speiz"] .research-tab-description { margin-top: 8px; }
+.editorial-case[data-project="speiz"] .comparison { width: 100%; max-width: none; }
+.editorial-case[data-project="speiz"] .comparison-frame img { object-fit: contain; object-position: left center; }
+
+/* Let each desktop screenshot fill its slide, so the next image follows without letterboxing. */
+@media (min-width: 901px) {
+  .editorial-case[data-project="speiz"] .comparison-rail {
+    --comparison-slide-width: min(86%, calc((var(--interactive-media-height) - 60px) * 1.40625));
+  }
+  .editorial-case[data-project="speiz"] .comparison-frame { flex-basis: var(--comparison-slide-width); }
+  .editorial-case[data-project="speiz"] .comparison-rail::after { flex-basis: calc(100% - var(--comparison-slide-width) - 16px); }
+}
+
+/* Align side navigation to its media; keep the details introduction above the sticky row. */
+.editorial-case[data-project="speiz"] .research-tabs > .research-tab-list { align-self: center; }
+.editorial-case[data-project="speiz"] #space-details > .editorial-details-intro { max-width: 600px; margin-bottom: 32px; }
+.editorial-case[data-project="speiz"] #space-details .editorial-details-copy > .editorial-details-features { margin-top: 0; }

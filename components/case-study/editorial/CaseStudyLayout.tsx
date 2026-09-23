@@ -56,15 +56,19 @@ function Block({ block, study }: { block: EditorialBlock; study: EditorialStudy 
 function Section({ section, study, child = false }: { section: EditorialSection; study: EditorialStudy; child?: boolean }) {
   if (section.stickyDetails) {
     const { image, features } = section.stickyDetails;
-    return <section id={section.id} data-toc-section tabIndex={-1} className="editorial-section editorial-subsection editorial-sticky-details">
-      <div className="editorial-details-copy">
+    return <section id={section.id} data-toc-section tabIndex={-1} className="editorial-section editorial-subsection">
+      <div className="editorial-details-intro">
         <SectionHeading label={section.label} headline={section.headline} child={child} hideLabel={section.id === "search-discovery"} />
         {section.paragraphs && <Paragraphs paragraphs={section.paragraphs} />}
+      </div>
+      <div className="editorial-sticky-details">
+      <div className="editorial-details-copy">
         <div className="editorial-details-features">{features.map(feature => <div key={feature.title}>
           <h4>{feature.title}</h4><p>{feature.text}</p>
         </div>)}</div>
       </div>
       <figure className="editorial-details-screen"><img src={sitePath(image.src)} alt={image.alt} width={image.width} height={image.height} loading="lazy" /></figure>
+      </div>
     </section>;
   }
   return <section id={section.id} data-toc-section tabIndex={-1} className={`editorial-section ${['speiz', 'website-builder'].includes(study.slug) && ['role-scope', 'problem', 'research-insights', 'system-strategy', 'design-process', 'impact', 'beyond-tenant-experience'].includes(section.id) ? 'editorial-reference-section' : ''} ${child ? 'editorial-subsection' : ''} ${section.children ? 'editorial-chapter' : ''}`}>
