@@ -3,7 +3,7 @@ export function Hero() {
   return (
     <section className="hero shell" aria-labelledby="hero-title">
       <p className="eyebrow hero-eyebrow">Senior Product Designer</p>
-      <h1 id="hero-title">Turning complex workflows into clear, scalable products.</h1>
+      <h1 id="hero-title">I design complex B2B products that feel simple, even when the logic behind them isn’t.</h1>
       <div className="hero-aside">
         <p>
           I work across product strategy, UX, UI, and design systems — from zero-to-one products to

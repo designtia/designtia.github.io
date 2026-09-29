@@ -1,6 +1,8 @@
 import { Header } from "@/components/portfolio/Header";
 import { Hero } from "@/components/portfolio/Hero";
 import { ProjectItem } from "@/components/portfolio/ProjectItem";
+import { Experience } from "@/components/portfolio/Experience";
+import { SkillsTools } from "@/components/portfolio/SkillsTools";
 import { About } from "@/components/portfolio/About";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
@@ -34,6 +36,8 @@ export default function Home() {
             }} />;
           })}
         </section>
+        <Experience />
+        <SkillsTools />
         <About />
         <Contact />
       </main>

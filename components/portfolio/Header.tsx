@@ -11,7 +11,7 @@ export function Header({ home = true, caseStudy = false }: { home?: boolean; cas
           {caseStudy ? <>
             <a href={sitePath('/')}>Home</a>
             <a href={`${prefix}#work`}>Projects</a>
-            <a href={`${prefix}#about`}>Experience</a>
+            <a href={`${prefix}#experience`}>Experience</a>
           </> : <>
             <a href={`${prefix}#work`}>Work</a>
             <a href={`${prefix}#about`}>About</a>
