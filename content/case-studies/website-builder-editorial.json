@@ -39,6 +39,36 @@
         "width": 2400,
         "height": 1707
       }
+    },
+    "shared-building-blocks": {
+      "title": "Shared building blocks",
+      "variant": "ia",
+      "image": {
+        "src": "/work/website-builder/shared-building-blocks.png",
+        "alt": "Shared building blocks interface screenshot.",
+        "width": 2888,
+        "height": 2056
+      }
+    },
+    "consistent-editing-model": {
+      "title": "Consistent editing model",
+      "variant": "ia",
+      "image": {
+        "src": "/work/website-builder/consistent-editing-model.png",
+        "alt": "Consistent editing model interface screenshot.",
+        "width": 2888,
+        "height": 2056
+      }
+    },
+    "product-level-configuration": {
+      "title": "Product-level configuration",
+      "variant": "ia",
+      "image": {
+        "src": "/work/website-builder/product-level-configuration.png",
+        "alt": "Product-level configuration interface screenshot.",
+        "width": 2880,
+        "height": 2048
+      }
     }
   },
   "sections": [
@@ -172,6 +202,35 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "design-process",
+      "nav": "Design Process",
+      "label": "DESIGN PROCESS",
+      "headline": "Turning repeated patterns into a reusable product structure",
+      "paragraphs": [
+        "Once the shared parts of the sales journey were clear, the next step was defining how they should exist inside the product: which parts became reusable building blocks, which settings teams could control, and how different tools could follow the same editing model."
+      ],
+      "blocks": [
+        {
+          "type": "titled-media",
+          "title": "Shared building blocks",
+          "description": "Breaking repeated page structures into reusable layout primitives, content components, and more advanced modules.",
+          "media": "shared-building-blocks"
+        },
+        {
+          "type": "titled-media",
+          "title": "Consistent editing model",
+          "description": "Using the same core interaction across the builder: select an element on the canvas, then configure its content, layout, styling, and behavior from the settings panel.",
+          "media": "consistent-editing-model"
+        },
+        {
+          "type": "titled-media",
+          "title": "Product-level configuration",
+          "description": "Moving repeated decisions such as branding, templates, and reusable assets out of individual pages and into shared controls.",
+          "media": "product-level-configuration"
         }
       ]
     }

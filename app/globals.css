@@ -1238,3 +1238,8 @@ nav span {
     transform: none;
   }
 }
+
+/* Shared image corners; SVG navigation icons retain their original geometry. */
+img:not([src$=".svg"]) {
+  border-radius: 12px !important;
+}

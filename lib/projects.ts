@@ -36,7 +36,7 @@ export const projects: Project[] = [
     name: "Self-service Website & Sales Flow Builder",
     category: "SELF-SERVICE WEBSITE & SALES FLOW BUILDER",
     image: "/work/website-builder/hero.png",
-    comingSoon: true,
+    href: "/work/website-builder/",
     headline: "Replacing weeks of custom development with the tools to build and launch on their own",
     description:
       "A configurable system for creating branded pages, quizzes, templates, components, and promotions.",
