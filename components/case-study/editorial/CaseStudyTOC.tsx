@@ -5,10 +5,10 @@ import { sitePath } from '@/lib/site-path';
 import type { EditorialSection } from '@/content/case-studies/editorial-types';
 
 type TOCItem = Pick<EditorialSection, 'id' | 'nav' | 'children'>;
-export function CaseStudyTOC({ sections }: { sections: EditorialSection[] }) {
-  const items: TOCItem[] = useMemo(() => [{ id: 'overview', nav: 'Overview' }, ...sections.filter(section => !section.hideFromTOC)], [sections]);
+export function CaseStudyTOC({ sections, includeOverview = true }: { sections: EditorialSection[]; includeOverview?: boolean }) {
+  const items: TOCItem[] = useMemo(() => [...(includeOverview ? [{ id: 'overview', nav: 'Overview' }] : []), ...sections.filter(section => !section.hideFromTOC)], [sections, includeOverview]);
   const flat = useMemo(() => items.flatMap(item => [item, ...(item.children ?? [])]), [items]);
-  const [active, setActive] = useState('overview');
+  const [active, setActive] = useState(includeOverview ? 'overview' : sections[0]?.id ?? '');
   const navigationTarget = useRef<string | null>(null);
 
   useEffect(() => {

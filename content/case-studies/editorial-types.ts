@@ -10,6 +10,7 @@ export type ResearchItem = { id: string; title: string; description: string; ima
 export type ComparisonState = { label: string; frames: { label: string; image: NonNullable<EditorialMedia["image"]> }[] };
 export type FocusItem = { fullScreen?: boolean; base?: NonNullable<EditorialMedia["image"]>; title: string; description: string; position: "left" | "right" | "center"; image: NonNullable<EditorialMedia["image"]> };
 export type EditorialBlock =
+  | { type: 'source'; block: import('./types').StudyBlock }
   | { type: "ecosystem"; paragraphs: string[]; items: { label: string; caption: string; image: NonNullable<EditorialMedia["image"]> }[] }
   | { type: "sticky-features"; image: NonNullable<EditorialMedia["image"]>; features: { title: string; text: string }[] }
   | { type: "focus-tabs"; label?: string; base: NonNullable<EditorialMedia["image"]>; items: FocusItem[] }
@@ -36,6 +37,8 @@ export type EditorialSection = {
   children?: EditorialSection[];
 };
 export type EditorialStudy = {
+  sourceLayout?: boolean;
+  sourceGallery?: import('./types').StudyImage[];
   slug: string;
   title: string;
   eyebrow: string;
